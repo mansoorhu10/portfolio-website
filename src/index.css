@@ -1,13 +1,587 @@
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url(../public/IBM_Plex_Sans/IBMPlexSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Bold';
+  src: url(../public/IBM_Plex_Sans/IBMPlexSans-Bold.ttf);
+}
+
 body {
+  background-color: var(--primary);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, 'IBM Plex Sans', 'Fira Sans',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  font-size: 18px;
+}
+
+.invisible-border {
+  padding: 10px;
+  padding-top: 80px;
+  margin-top: 5%;
+  height: calc(100vh - 20px);
+}
+
+
+/* Colour Theme */
+:root {
+  --primary: #171212;
+  --secondary: #5F0707;
+  --third: #A70B0B;
+  --fourth: #F6DE26;
+  --fifth: #FEFAEB;
+}
+
+nav.navbar {
+  top: 0;
+  width: 100%;
+  overflow: auto;
+  text-align: left;
+  position: fixed;
+  background-color: var(--primary);
+  z-index: 4;
+}
+
+nav.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.navbar li {
+  display: inline-block;
+}
+
+nav.navbar li a {
+  display: block;
+  width: 150px;
+  color: var(--fourth);
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  background-color: var(--primary);
+}
+
+nav.navbar li a:hover, a:active {
+  color: var(--fifth);
+  background-color: var(--secondary);
+}
+
+/*Styled Retro Window with all components*/
+
+.retro-window {
+  position: absolute;
+  width: 762px;
+  height: 546px;
+  z-index: 3;
+  top: calc((100vh - 20px - 546px) / 2);
+  left: calc((100vw - 10px - 762px) / 2);
+}
+
+.top-background {
+  position: absolute;
+  width: 100%;
+  height: 10.60%;
+  left: 0px;
+  top: 0px;
+  background: var(--fourth);
+}
+
+.top-bar {
+  position: absolute;
+  left: 0.44%;
+  right: 0.33%;
+  top: 0.61%;
+  bottom: 90.56%;
+  background: var(--secondary);
+}
+
+.minus-square-button {
+  position: absolute;
+  left: 77.32%;
+  right: 16.79%;
+  top: 1.67%;
+  bottom: 91.63%;
+  background: var(--fourth);
+}
+
+.close-square-button {
+  position: absolute;
+  left: 91.6%;
+  right: 2.51%;
+  top: 1.67%;
+  bottom: 91.63%;
+  background: var(--fourth);
+}
+
+.maximize-square-button {
+  position: absolute;
+  left: 84.51%;
+  right: 9.6%;
+  top: 1.67%;
+  bottom: 91.63%;
+  background: var(--fourth);
+}
+
+.minus-left-highlight {
+  position: absolute;
+  left: 77.32%;
+  right: 22.46%;
+  top: 1.67%;
+  bottom: 91.63%;
+  background: var(--fifth);
+}
+
+.minus-top-highlight {
+  position: absolute;
+  width: 5.88%;
+  height: 0.3%;
+  left: 77.3%;
+  top: 1.67%;
+  background-color: var(--fifth);
+}
+
+.maximize-left-highlight {
+  position: absolute;
+  left: 84.51%;
+  right: 15.27%;
+  top: 1.67%;
+  bottom: 91.63%;
+  background: var(--fifth);
+}
+
+.maximize-top-highlight {
+  position: absolute;
+  width: 5.88%;
+  height: 0.3%;
+  left: 84.51%;
+  top: 1.67%;
+  background: var(--fifth);
+}
+
+.close-left-highlight {
+  position: absolute;
+  left: 91.6%;
+  right: 8.18%;
+  top: 1.67%;
+  bottom: 91.63%;
+  background: var(--fifth);
+}
+
+.close-top-highlight {
+  position: absolute;
+  width: 5.88%;
+  height: 0.3%;
+  left: 91.60%;
+  top: 1.67%;
+  background: var(--fifth);
+}
+
+.minus-sign {
+  position: absolute;
+  left: 79.06%;
+  right: 18.43%;
+  top: 7.15%;
+  bottom: 92.39%;
+  background: var(--primary);
+}
+
+.top-maximize-sign {
+  position: absolute;
+  width: 3.271%;
+  height: 0.761%;
+  left: 85.82%;
+  top: 3.181%;
+  background: var(--primary);
+}
+
+.left-maximize-sign {
+  position: absolute;
+  width: 0.109%;
+  height: 3.957%;
+  left: 85.82%;
+  top: 3.17%;
+  background: var(--primary);
+}
+
+.bottom-maximize-sign {
+  position: absolute;
+  width: 3.271%;
+  height: 0.3%;
+  left: 85.82%;
+  top: 6.849%;
+  background: var(--primary);
+}
+
+.right-maximize-sign {
+  position: absolute;
+  left: 88.99%;
+  right: 10.91%;
+  top: 3.2%;
+  bottom: 92.85%;
+  background: var(--primary);
+}
+
+.left-close-sign {
+  position: absolute;
+  width: 3.816%;
+  height: 0.3%;
+  left: 92.63%;
+  top: 5.02%;
+  background: var(--primary);
+  transform: rotate(45deg);
+}
+
+.right-close-sign {
+  position: absolute;
+  width: 3.8167%;
+  height: 0.3%;
+  left: 92.58%;
+  top: 4.9847%;
+  background: var(--primary);
+  transform: rotate(-45deg);
+}
+
+.rest-window {
+  position: absolute;
+  width: 100%;
+  height: 90.56%;
+  left: 0%;
+  top: 9.437%;
+}
+
+.top-left {
+  position: absolute;
+  top: 13.698%;
+  left: 6.979%;
+}
+
+.top-background-highlight {
+  position: absolute;
+  width: 0.2551%;
+  height: 9.284%;
+  left: 0.08228%;
+  top: 0.109%;
+  background: var(--fifth);
+}
+
+.top-container:hover {
+  cursor: move;
+}
+
+.minus-container:hover > .minus-square-button {
+  background: var(--fifth);
+}
+
+.minus-container:active > .minus-left-highlight {
+  background: var(--primary);
+}
+
+.minus-container:active > .minus-top-highlight {
+  background: var(--primary);
+}
+
+.minus-container:hover > .minus-sign {
+  background: var(--third);
+}
+
+.maximize-container:hover > .maximize-square-button {
+  background: var(--fifth);
+}
+
+.maximize-container:active > .maximize-left-highlight {
+  background: var(--primary);
+}
+
+.maximize-container:active > .maximize-top-highlight {
+  background: var(--primary);
+}
+
+.maximize-container:hover > .top-maximize-sign {
+  background: var(--third);
+}
+
+.maximize-container:hover > .left-maximize-sign {
+  background: var(--third);
+}
+
+.maximize-container:hover > .right-maximize-sign {
+  background: var(--third);
+}
+
+.maximize-container:hover > .bottom-maximize-sign {
+  background: var(--third);
+}
+
+.close-container:hover > .close-square-button {
+  background: var(--fifth);
+}
+
+.close-container:active > .close-left-highlight {
+  background: var(--primary);
+}
+
+.close-container:active > .close-top-highlight {
+  background: var(--primary);
+}
+
+.close-container:hover > .right-close-sign {
+  background: var(--third);
+}
+
+.close-container:hover > .left-close-sign {
+  background: var(--third);
+}
+
+h1 {
+  font-family: 'IBM Plex Sans Bold', sans-serif;
+  font-size: 60px;
+}
+
+h3 {
+  font-family: 'IBM Plex Sans Bold', sans-serif;
+  font-size: 40px;
+}
+
+.logo-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 23.622%;
+}
+.logo-child {
+  padding: 15px;
+  box-sizing: border-box;
+}
+.logo-child img {
+  width: 70px;
+}
+
+.logo-child a:active {
+  background-color: var(--fifth);
+}
+
+.first-article-background {
+  background-color: var(--secondary);
+  height: calc(100vh - 80px);
+  padding: 2%;
+  margin-top: 5%;
+  padding-top: 15%;
+}
+
+.first-article {
+  margin-left: 8%;
+  color: white;
+  margin-right: 50%;
+}
+
+#computer {
+  min-height: 400px;
+  width: 100%;
+  z-index: 3;
+  top: 75px;
+}
+
+.paint-window {
+  background: white;
+}
+
+.paint-window-container {
+  width: 548px;
+  height: 621px;
+  position: absolute;
+  z-index: 2;
+}
+
+.paint-top-background {
+  position: absolute;
+  width: 548px;
+  height: 38px;
+  left: 0px;
+  top: 0px;
+  background: #F6DE26;
+}
+
+.paint-top-bar {
+  position: absolute;
+  left: 0.91%;
+  right: 0.91%;
+  top: 0.81%;
+  bottom: 93.88%;
+  background: #5F0707;
+}
+
+.paint-minus-square-button {
+  position: absolute;
+  left: 79.93%;
+  right: 14.78%;
+  top: 1.61%;
+  bottom: 94.69%;
+  background: #F6DE26;
+}
+
+.paint-close-square-button {
+  position: absolute;
+  left: 92.52%;
+  right: 2.19%;
+  top: 1.61%;
+  bottom: 94.69%;
+  background: #F6DE26;
+}
+
+.paint-maximize-square-button {
+  position: absolute;
+  left: 86.31%;
+  right: 8.39%;
+  top: 1.61%;
+  bottom: 94.69%;
+  background: #F6DE26;
+}
+
+.paint-minus-left-highlight {
+  position: absolute;
+  left: 79.93%;
+  right: 19.89%;
+  top: 1.61%;
+  bottom: 94.69%;
+
+  background: #FEFAEB;
+}
+
+.paint-maximize-left-highlight {
+  position: absolute;
+  left: 86.31%;
+  right: 13.5%;
+  top: 1.61%;
+  bottom: 94.69%;
+
+  background: #FEFAEB;
+}
+
+.paint-close-left-highlight {
+  position: absolute;
+  left: 92.52%;
+  right: 7.3%;
+  top: 1.61%;
+  bottom: 94.69%;
+
+  background: #FEFAEB;
+}
+
+.paint-minus-sign {
+  position: absolute;
+  left: 81.39%;
+  right: 16.24%;
+  top: 4.67%;
+  bottom: 95.17%;
+
+  background: #171212;
+}
+
+.paint-right-maximize-sign {
+  position: absolute;
+  left: 90.33%;
+  right: 9.49%;
+  top: 2.42%;
+  bottom: 95.33%;
+  
+  background: #171212;
+  
+}
+
+.paint-minus-top-highlight {
+  position: absolute;
+  left: 79.93%;
+  right: 14.78%;
+  top: 1.61%;
+  bottom: 98.23%;
+  
+  background: #FEFAEB;
+}
+
+.paint-maximize-top-highlight {
+  position: absolute;
+  left: 86.31%;
+  right: 8.39%;
+  top: 1.61%;
+  bottom: 98.23%;
+  
+  background: #FEFAEB;
+}
+
+.paint-top-maximize-sign {
+  position: absolute;
+  left: 87.59%;
+  right: 9.49%;
+  top: 2.42%;
+  bottom: 97.1%;
+  
+  background: #171212;
+}
+
+.paint-left-maximize-sign {
+  position: absolute;
+  left: 87.59%;
+  right: 12.23%;
+  top: 2.42%;
+  bottom: 95.33%;
+  
+  background: #171212;
+}
+
+.paint-bottom-maximize-sign {
+  position: absolute;
+  left: 87.59%;
+  right: 9.49%;
+  top: 4.51%;
+  bottom: 95.33%;
+  
+  background: #171212;
+}
+
+.paint-close-top-highlight {
+  position: absolute;
+  left: 92.52%;
+  right: 2.19%;
+  top: 1.61%;
+  bottom: 98.23%;
+  
+  background: #FEFAEB;
+}
+
+.paint-left-close-sign {
+  position: absolute;
+  left: 94.18%;
+  right: 2.44%;
+  top: 2.41%;
+  bottom: 97.42%;
+  
+  background: #171212;
+  transform: rotate(45deg);
+}
+
+.paint-right-close-sign {
+  position: absolute;
+  left: 94.04%;
+  right: 2.58%;
+  top: 4.52%;
+  bottom: 95.3%;
+  
+  background: #171212;
+  transform: rotate(-45deg);
+}
+
+.paint-top-background-highlight {
+  position: absolute;
+  width: 3px;
+  height: 37px;
+  left: 1px;
+  top: 1px;
+  
+  background: #FFFFFF;
 }
