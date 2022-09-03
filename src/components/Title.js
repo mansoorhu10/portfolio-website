@@ -8,13 +8,13 @@ const Title = () => {
 
     return (
         <motion.div 
-            initial={{ opacity: 0,}}
-            animate={{ opacity: 1,}}
+            initial={{ scale: 0.2, opacity: 0,}}
+            animate={{ scale: 1, opacity: 1,}}
             transition={{ duration: 1 }}         
         
 
         className="invisible-border"> 
-            <Draggable handle="#handle" bounds='parent'>
+            <Draggable handle="#handle" bounds='parent' className='draggable-paint'>
                 <div className="retro-window">
                     
                     <div id="handle" className="top-container">
@@ -23,7 +23,6 @@ const Title = () => {
                         <div className="top-background-highlight"></div>
                     </div>
                     
-
                     <div className="minus-container">
                         <div className="minus-square-button"></div>
                         <div className="minus-left-highlight"></div>
