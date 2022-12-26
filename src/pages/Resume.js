@@ -5,8 +5,10 @@ const Resume = () => {
 
     return (
         <div className="resume-page">
-            <div
-                
+            <motion.div    
+                initial={{scale: 0.2, opacity: 0}}
+                animate={{scale: 1, opacity: 1}}
+                transition={{duration: 1}}
             className="resume-window">
                 <div className="top-container">
                     <div className="contact-top-background"></div>
@@ -33,7 +35,7 @@ const Resume = () => {
                     ></iframe>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }
