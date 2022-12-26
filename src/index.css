@@ -942,3 +942,16 @@ label {
   top: 0.109%;
   background: var(--fifth);
 }
+
+/* Resume Page */
+.resume-page {
+  height: calc(100vh - 100px);
+  margin-top: 90px;
+  justify-content: center;
+  width: 900px;
+
+}
+
+.resume-document {
+  padding: 10px;
+}
