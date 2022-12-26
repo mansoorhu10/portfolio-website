@@ -5,15 +5,12 @@ const Resume = () => {
 
     return (
         <div className="resume-page">
-            <motion.div 
-                initial={{scale: 0.2, opacity: 0}}
-                animate={{scale: 1, opacity: 1}}
-                transition={{duration: 1, delay: 0.4}}
+            <div
                 
-            className="contact-window">
-                <div id="handle" className="top-container">
+            className="resume-window">
+                <div className="top-container">
                     <div className="contact-top-background"></div>
-                    <div className="contact-top-bar"></div>
+                    <div className="resume-top-bar"></div>
                     <div className="contact-top-background-highlight"></div>
                 </div>
                 
@@ -29,13 +26,14 @@ const Resume = () => {
                     <div className="resume-document">
                     <iframe 
                         title="Mansoor Syed - 2022 Resume"
-                        src="https://docs.google.com/document/d/e/2PACX-1vQyyKWy3Sf3l9HAk1jxexYTiXW_lvnVN5DZbzNnqYRf3UqxYhWIuz_tcApIZQ4D8m3g-rppep65QGJe/pub?embedded=true"
-                        height="1000px"
+                        src="https://docs.google.com/document/d/e/2PACX-1vRDai7aMjDjmbnunJ_LsHel3WloReuDfi7DGHmGXRp835imdpU1jc9a0yLnu3_IMg/pub?embedded=true"
+                        height="1400px"
                         width="800px"
+                        style={{border: "0px"}}
                     ></iframe>
                     </div>
                 </div>
-            </motion.div>
+            </div>
         </div>
     );
 }
