@@ -1,6 +1,7 @@
 import { React } from "react";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 
 const NavBar = () => {
@@ -9,7 +10,7 @@ const NavBar = () => {
 
     return (
         <nav className="navbar" id={expandNavbar ? "open" : "close"}>
-
+            
             <div className ="toggleButton">
                 <button onClick={() => setExpandNavBar((prev) => !prev)}> </button>
             </div>
@@ -22,8 +23,8 @@ const NavBar = () => {
             </ul>
             
             <div className="vl">
-                <div className="logo-child"><a href="https://github.com/mansoorhu10" target={"_blank"} rel="noreferrer"><img width="20" alt="GitHub Logo" src="/logos/github-logo.png"></img></a></div>
-                <div className="logo-child"><a href="https://www.linkedin.com/in/mansoor-syed-83b45b23b" target={"_blank"} rel="noreferrer"><img width ="5" alt="LinkedIn Logo" src="/logos/linkedin-logo.png"></img></a></div>
+                <motion.div whileHover={{ backgroundColor: "#A70B0B", }} className="logo-child"><a href="https://github.com/mansoorhu10" target={"_blank"} rel="noreferrer"><img alt="GitHub Logo" src="/logos/github-logo.png"></img></a></motion.div>
+                <motion.div whileHover={{ backgroundColor: "#A70B0B", }} className="logo-child"><a href="https://www.linkedin.com/in/mansoor-syed-83b45b23b" target={"_blank"} rel="noreferrer"><img alt="LinkedIn Logo" src="/logos/linkedin-logo.png"></img></a></motion.div>
             </div>
             
         </nav>

@@ -12,7 +12,6 @@ const Title = () => {
             animate={{ scale: 1, opacity: 1,}}
             transition={{ duration: 1 }}         
         
-
         className="invisible-border"> 
             <Draggable handle="#handle" bounds='parent' className='draggable-paint'>
                 <div className="retro-window">

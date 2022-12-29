@@ -31,7 +31,7 @@ const Resume = () => {
                         src="https://docs.google.com/document/d/e/2PACX-1vRDai7aMjDjmbnunJ_LsHel3WloReuDfi7DGHmGXRp835imdpU1jc9a0yLnu3_IMg/pub?embedded=true"
                         height="1400px"
                         width="800px"
-                        style={{borderTop: "2px", borderLeft: "2px", borderRight: "0px", borderBottom: "0px"}}
+                        style={{borderTop: "3px solid black", borderLeft: "3px solid black", borderRight: "3px solid white", borderBottom: "3px solid white"}}
                     ></iframe>
                     </div>
                 </div>

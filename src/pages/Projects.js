@@ -1,10 +1,17 @@
 import React from "react";
+import ProjectItem from "../components/ProjectItem";
+import { ProjectList } from "../helpers/ProjectList";
 
 const Projects = () => {
 
     return (
         <div className="projects-page">
-            <h3>Projects</h3>
+            <div className="project-list">
+                {ProjectList.map((project) => {
+                    return <ProjectItem name={project.name} logo={project.logo} />
+                })}
+            </div>
+
         </div>
     );
 
