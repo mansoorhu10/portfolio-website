@@ -7,8 +7,8 @@ const Projects = () => {
     return (
         <div className="projects-page">
             <div className="project-list">
-                {ProjectList.map((project) => {
-                    return <ProjectItem name={project.name} logo={project.logo} />
+                {ProjectList.map((project, index) => {
+                    return <ProjectItem id={index} name={project.name} logo={project.logo} />
                 })}
             </div>
 
