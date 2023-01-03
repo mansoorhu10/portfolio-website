@@ -83,7 +83,7 @@ nav.navbar {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 11%;
+  height: 100px;
   overflow: hidden;
   position: fixed;
   background-color: var(--fourth);
@@ -104,7 +104,7 @@ nav.navbar ul {
 
 nav.navbar li {
   display: inline-block;
-  border: 5px solid var(--fourth);
+  border: 3px solid var(--fourth);
 }
 
 nav.navbar li a {
@@ -121,6 +121,11 @@ nav.navbar li a {
 nav.navbar li a:hover, a:active {
   color: var(--fifth);
   background-color: var(--secondary);
+  border-top: 3px solid var(--fifth);
+  border-left: 3px solid var(--fifth);
+  border-right: 3px solid var(--primary);
+  border-bottom: 3px solid var(--primary);
+
 }
 
 .toggleButton {
@@ -141,6 +146,21 @@ nav.navbar li a:hover, a:active {
   border: none;
   color: white;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar a {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .toggleButton {
+    display: flex;
+  }
+  #close a {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -1060,4 +1080,46 @@ label {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Dynamic Project Pages */
+
+.project {
+  margin-left: 300px;
+  margin-top: 50px;
+  margin-right: 300px;
+  margin-bottom: 150px;
+  color: white;
+}
+
+.project h1 {
+  font-family: 'IBM Plex Sans Bold', 'Fira Sans', sans-serif;
+  display: inline-block;
+}
+
+.project .project-logo {
+  width: 80px;
+  height: 80px;
+  float: right;
+}
+
+.description-image {
+  text-align: center;
+}
+
+.image-one {
+  width: 100%;
+  height: auto;
+}
+
+.project-article {
+
+}
+
+.project .project-name {
+  
+}
+
+.project-skills {
+
 }
