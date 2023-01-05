@@ -48,7 +48,7 @@ const Model = () => {
           <img alt="bottom half of retro paint window" class="paint-rest-window" src="/paint-window@1x.svg"></img>
         </div>
 
-        <model-viewer alt="3D Model of an Old Retro Computer" id="computer" className="computer" disable-zoom src="/retro-computer/source/lowres-computer.glb" ar
+        <model-viewer alt="3D Model of an Old Retro Computer" id="computer" disable-zoom src="/retro-computer/source/lowres-computer.glb" ar
         ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1"
         shadow-softness="1" environment-image="/retro-computer/textures/black-square.webp" auto-rotate>
             <div className="progress-bar hide" slot="progress-bar">

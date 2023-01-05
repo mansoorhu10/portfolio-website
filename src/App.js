@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from './pages/Contact';
 import ProjectDisplay from "./pages/ProjectDisplay";
+import ContactSuccess from './pages/ContactSuccess';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:id" element={<ProjectDisplay />} /> 
           <Route path="/contact" element={<Contact />} />
+          <Route path="/contact/success" element={<ContactSuccess />} />
         </Routes>
       </Router>
     </div>

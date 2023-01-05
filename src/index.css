@@ -65,7 +65,7 @@ p {
 }
 
 .invisible-border {
-  height: calc(100vh - 20px);
+  height: calc(100vh - 40px);
 }
 
 /* Colour Theme */
@@ -115,7 +115,6 @@ nav.navbar li a {
   padding: 15px;
   text-decoration: none;
   background-color: var(--fourth);
-  
 }
 
 nav.navbar li a:hover, a:active {
@@ -125,7 +124,6 @@ nav.navbar li a:hover, a:active {
   border-left: 3px solid var(--fifth);
   border-right: 3px solid var(--primary);
   border-bottom: 3px solid var(--primary);
-
 }
 
 .toggleButton {
@@ -210,7 +208,7 @@ nav.navbar li a:hover, a:active {
   width: 762px;
   height: 546px;
   z-index: 3;
-  top: calc((100vh - 20px - 546px) / 2);
+  top: calc((100vh - 100px - 546px) / 2);
   left: calc((100vw - 10px - 762px) / 2);
 }
 
@@ -481,20 +479,22 @@ h3 {
 
 .logo-container {
   display: grid;
+  justify-content: center;
   grid-template-columns: auto auto auto;
   width: 23.622%;
 }
+
 .logo-child {
-  padding: 15px;
   box-sizing: border-box;
+  height: 100%;
+  width: 100%;
 }
 .logo-child img {
   width: 70px;
+  padding: 15px;
 }
 
-.logo-child a:active {
-  background-color: var(--fifth);
-}
+
 
 .first-article-background {
   background-color: var(--secondary);
@@ -514,15 +514,15 @@ h3 {
 }
 
 .first-article-text {
-  margin-right: 20%;
+  margin-right: 5%;
 }
 
-#computer {
-  min-height: 400px;
-  width: 200%;
+.paint-window #computer {
+  height: 400px;
+  width: 300px;
   z-index: 3;
   top: 10%;
-  left: 60%;
+  left: 55%;
 }
 
 .draggable-paint {
@@ -532,7 +532,7 @@ h3 {
 .paint-window {
   width: 548px;
   height: 621px;   
-  margin-right: 28%;
+  margin-right: 20%;
   z-index: 1;
   background-color: #FFFFFF;
 }
@@ -798,7 +798,7 @@ h3 {
 
 /* Contact Page */
 .contact-page {
-  height: calc(100vh - 50px);
+  height: calc(100vh + 50%);
   
 }
 
@@ -810,7 +810,8 @@ h3 {
 
 .contact-container {
   width: 80%;
-  margin: 50px auto;
+  margin: auto;
+  padding-top: 75px;
 }
 
 .contact-box {
@@ -821,11 +822,12 @@ h3 {
 .contact-text {
   color: white;
   flex-basis: 40%;
-  padding: 40px 60px;
+  padding: 100px 60px;
+
 }
 
 .contact-text > h1 {
-  font-size: 50px;
+  font-size: 45px;
 }
 
 
@@ -886,7 +888,8 @@ textarea {
   outline: none;
   padding: 10px;
   box-sizing: border-box;
-  resize: vertical;
+  resize: none;
+  min-height: 125px;
 }
 
 label {
@@ -1106,6 +1109,7 @@ label {
   width: 80px;
   height: 80px;
   float: right;
+  margin-top: 35px;
 }
 
 .description-image {
@@ -1130,12 +1134,14 @@ label {
 }
 
 .project .logo-child {
+  top: 50%;
+  left: 50%;
   background-color: var(--fourth);
   border-top: 3px solid white;
   border-left: 3px solid white;
   border-right: 3px solid black;
   border-bottom: 3px solid black;
-  width: 9%;
+  width: 115px;
 }
 .project .logo-child img{
   width: 80px;
@@ -1153,6 +1159,7 @@ label {
   text-decoration: none;
   padding: 15px;
   float: left;
+  margin-top: 40px;
   
 }
 
@@ -1164,4 +1171,7 @@ label {
   color: white;
 }
 
+.back-button:hover{
+  background-color: var(--secondary);
+}
 

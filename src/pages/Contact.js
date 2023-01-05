@@ -6,11 +6,15 @@ const Contact = () => {
     const key = "6b9cb0844889dae6195a7031e4e8bc90";
     const formSubmitAddress = `https://formsubmit.co/${key}`;
 
+    const domainName = "localhost:3000";
+    const successURL = "/contact/success";
+
+    const successPage = domainName + successURL;
+
     return (
         <div className="contact-page">
             <div className="contact-half">
                 <div className="contact-container">
-
                     <div className="contact-box">
 
                         <motion.div 
@@ -49,37 +53,34 @@ const Contact = () => {
                                 
                                 <div className="contact-rest-window">
                                     <form className="contact-form" action={formSubmitAddress} method="POST">
+                                    <input type="hidden" name="_next" value={successPage}></input>
+                                    
                                     <div className="input-row">
                                         <div className="input-group">
                                             <label> Name: </label> 
-                                            <input type="text" placeholder="Your Full Name" required/>
+                                            <input name="name" type="text" placeholder="Your Full Name" required/>
                                         </div>
                                         <div className="input-group">
                                             <label> Email Address: </label> 
-                                            <input type="email" placeholder="your@email.com" required/>
-                                        </div>
-                                        
+                                            <input name="email" type="email" placeholder="your@email.com" required/>
+                                        </div> 
                                     </div>
 
                                     <div className="input-row">
                                         <div className="input-group">
                                             <label> Phone Number (Optional):</label>
-                                            <input type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                                            <input name="phone" type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
                                         </div>
                                         <div className="input-group">
                                             <label> Subject </label>
-                                            <input type="text" placeholder="Internship" required/>
+                                            <input name="_subject" type="text" placeholder="Internship" required/>
                                         </div>
-
                                     </div>
 
                                     <div className="input-row">
-                                        
                                             <label> Message </label>
-                                            <textarea rows="5" placeholder="Your Message"></textarea>
-                                        
+                                            <textarea name="message" rows="5" placeholder="Your Message"></textarea>
                                     </div>
-                                    
 
                                     <button class="submit-button" type="submit">Send</button>
 
@@ -87,10 +88,7 @@ const Contact = () => {
                                 </div>
                             </motion.div>
 
-                            
-
                         </div>
-                        
                     </div>
                 </div>
             </div>    

@@ -4,7 +4,7 @@ import { ProjectList } from "../helpers/ProjectList";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
-function ProjectDisplay() {
+const ProjectDisplay = () => {
     const { id } = useParams();
     const project = ProjectList[id];
     const logoAlt = project.name + " Logo";
