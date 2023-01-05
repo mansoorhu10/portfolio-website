@@ -798,8 +798,8 @@ h3 {
 
 /* Contact Page */
 .contact-page {
-  height: calc(100vh - 100px);
-  margin-top: 90px;
+  height: calc(100vh - 50px);
+  
 }
 
 .contact-half {
@@ -900,7 +900,7 @@ label {
 }
 
 .submit-button {
-  background: var(--third);
+  background-color: var(--third);
   font-family: 'IBM Plex Sans Bold';
   width: 100px;
   color: white;
@@ -913,6 +913,10 @@ label {
   border-right-color: var(--primary);
   border-bottom-color: var(--primary);
   margin-bottom: 20px;
+}
+
+.submit-button:hover {
+  background-color: var(--secondary);
 }
 
 .contact-close-square-button {
@@ -1055,6 +1059,7 @@ label {
   font-size: 20px;
   
 }
+
 .project-list {
   width: 30vw;
   height: auto;
@@ -1085,7 +1090,7 @@ label {
 /* Dynamic Project Pages */
 
 .project {
-  margin-left: 300px;
+  margin-left: 50px;
   margin-top: 50px;
   margin-right: 300px;
   margin-bottom: 150px;
@@ -1113,7 +1118,7 @@ label {
 }
 
 .project-article {
-
+  margin-left: 250px;
 }
 
 .project .project-name {
@@ -1123,3 +1128,40 @@ label {
 .project-skills {
 
 }
+
+.project .logo-child {
+  background-color: var(--fourth);
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  width: 9%;
+}
+.project .logo-child img{
+  width: 80px;
+}
+
+.back-button {
+  font-family: 'Pixeloid Sans', 'IBM Plex Sans', 'Fira Sans', sans-serif;
+  font-size: 35px;
+  background-color: var(--third);
+  color:white;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  text-decoration: none;
+  padding: 15px;
+  float: left;
+  
+}
+
+.back-button:active {
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  color: white;
+}
+
+

@@ -3,6 +3,9 @@ import { motion } from 'framer-motion';
 
 const Contact = () => {
 
+    const key = "6b9cb0844889dae6195a7031e4e8bc90";
+    const formSubmitAddress = `https://formsubmit.co/${key}`;
+
     return (
         <div className="contact-page">
             <div className="contact-half">
@@ -45,26 +48,27 @@ const Contact = () => {
                                 </div>
                                 
                                 <div className="contact-rest-window">
-                                    <form className="contact-form">
+                                    <form className="contact-form" action={formSubmitAddress} method="POST">
                                     <div className="input-row">
                                         <div className="input-group">
                                             <label> Name: </label> 
-                                            <input type="text" placeholder="John Doe" />
+                                            <input type="text" placeholder="Your Full Name" required/>
                                         </div>
                                         <div className="input-group">
-                                            <label> Phone Number: </label>
-                                            <input type="text" placeholder="+1 123 456 7890" />
+                                            <label> Email Address: </label> 
+                                            <input type="email" placeholder="your@email.com" required/>
                                         </div>
+                                        
                                     </div>
 
                                     <div className="input-row">
                                         <div className="input-group">
-                                            <label> Email Address: </label> 
-                                            <input type="email" placeholder="youremail@gmail.com" />
+                                            <label> Phone Number (Optional):</label>
+                                            <input type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
                                         </div>
                                         <div className="input-group">
                                             <label> Subject </label>
-                                            <input type="text" placeholder="Internship" />
+                                            <input type="text" placeholder="Internship" required/>
                                         </div>
 
                                     </div>

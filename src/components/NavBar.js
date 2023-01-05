@@ -18,7 +18,6 @@ const NavBar = () => {
             <ul className="links">
                 <li><strong><NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : "link")}> Home </NavLink></strong></li>
                 <li><strong><NavLink to="/projects" className={({ isActive }) => (isActive ? "active-link" : "link")}> Projects </NavLink></strong></li>
-                <li><strong><NavLink to="/resume" className={({ isActive }) => (isActive ? "active-link" : "link")}> Resume </NavLink></strong></li>
                 <li><strong><NavLink to="/contact" className={({ isActive }) => (isActive ? "active-link" : "link")}> Contact Me </NavLink></strong></li>
                 <div className="vl">
                     <motion.div whileHover={{ backgroundColor: "#A70B0B", }} className="logo-child"><a href="https://github.com/mansoorhu10" target={"_blank"} rel="noreferrer"><img alt="GitHub Logo" src="/logos/github-logo.png"></img></a></motion.div>
