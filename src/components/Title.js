@@ -3,6 +3,7 @@ import '../index.css';
 import Typewriter from 'typewriter-effect';
 import Draggable from 'react-draggable';
 import { motion } from "framer-motion"
+import { GitHub, LinkedIn } from "@mui/icons-material";
 
 const Title = () => {
 
@@ -65,12 +66,12 @@ const Title = () => {
                                 boxShadow: "0px 0px 8px rgb(167, 11, 11)",
                                 scale: 1.2,
                             }} 
-                            className="logo-child"><a href="https://github.com/mansoorhu10" target={"_blank"} rel="noreferrer"><img alt="GitHub Logo" src="/logos/github-logo.png"></img></a></motion.div>
+                            className="logo-child"><a href="https://github.com/mansoorhu10" target={"_blank"} rel="noreferrer"><GitHub /></a></motion.div>
                             <motion.div whileHover={{
                                 boxShadow: "0px 0px 8px rgb(167, 11, 11)",
                                 scale: 1.2
                             }} 
-                            className="logo-child"><a href="https://www.linkedin.com/in/mansoor-syed-83b45b23b" target={"_blank"} rel="noreferrer"><img alt="LinkedIn Logo" src="/logos/linkedin-logo.png"></img></a></motion.div>
+                            className="logo-child"><a href="https://www.linkedin.com/in/mansoor-syed-83b45b23b" target={"_blank"} rel="noreferrer"><LinkedIn /></a></motion.div>
                         </div>
                     </div>
                 </div>

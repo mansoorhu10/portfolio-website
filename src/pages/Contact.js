@@ -24,7 +24,8 @@ const Contact = () => {
                         
                         className="contact-text">
                             <h1>Need to reach out?</h1>
-                            <p>I would love to hear from you!</p>
+                            <p>I would love to hear from you! Also feel free to message me on LinkedIn. </p>
+                            
                         </motion.div>
 
 

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { ProjectList } from "../helpers/ProjectList";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import { GitHub } from "@mui/icons-material";
 
 const ProjectDisplay = () => {
     const { id } = useParams();
@@ -13,11 +14,16 @@ const ProjectDisplay = () => {
     return  (
         <div className="project">
 
-            <motion.div
-                whileHover={{backgroundColor: "#A70B0B"}}
-            ><h2><strong><NavLink to="/projects" className="back-button"> &larr; Back </NavLink></strong></h2></motion.div>
+            <div>
+                <h2><strong><NavLink to="/projects" className="back-button"> &larr; Back </NavLink></strong></h2>
+            </div>
             
-            <div className="project-article">
+            <motion.div 
+                initial={{opacity: 0,}}
+                animate={{opacity: 1,}}
+                transition={{duration: 0.5}}
+
+            className="project-article">
                 <div className="project-name">
                     <img src={project.logo} alt={logoAlt} className="project-logo" />
                     <h1>{project.name}</h1>
@@ -37,15 +43,33 @@ const ProjectDisplay = () => {
                     <br />
 
                     <div className="project-description">
-                        {project.description}
+                        <p>{project.descriptionOne}</p>
                     </div>
 
                     <br />
 
-                    <motion.div whileHover={{ backgroundColor: "#A70B0B", }} className="logo-child"><a href={project.link} target={"_blank"} rel="noreferrer"><img alt="GitHub Logo" src="/logos/github-logo.png"></img></a></motion.div>
+                    <div className="description-image">
+                        <img className="image-one" src={project.imageTwo} alt={imageOneAlt}></img>
+                    </div>
+
+                    <div className="project-description">
+                        <p>{project.descriptionTwo}</p>
+                    </div>
+
+                    <br />
+
+                    <div className="source-code">
+                        <p className="source-text">
+                            <b>View the project source code here:</b> 
+                        </p>
+                        <div className="logo-child"><a href={project.link} target={"_blank"} rel="noreferrer"><GitHub /></a></div>
+
+                    </div>
+
+                    
 
                 </p>
-            </div>
+            </motion.div>
         </div>
     )
 }
