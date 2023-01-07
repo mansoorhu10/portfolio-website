@@ -1202,3 +1202,30 @@ label {
   background-color: var(--secondary);
 }
 
+/* 404 - Not Found Page */
+.not-found{
+  margin-left: 20%;
+  margin-right: 20%;
+  color: white;
+}
+
+.not-found h2{
+  font-size: 40px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin-top: 100px;
+}
+
+.error-text{
+  font-family: 'Pixeloid Sans', 'IBM Plex Sans', 'Fira Sans', sans-serif;
+  margin-top: 40px;
+}
+
+.error-logo{
+  height: 100px;
+  width: auto;
+  padding-right: 25px;
+  float: left;
+  margin-top: -25px;
+}
+
+
