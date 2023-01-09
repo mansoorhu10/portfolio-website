@@ -5,6 +5,13 @@ import HangBotLogo from "../assets/hangbot-logo.png";
 import AssignmentThreeLogo from "../assets/assignment-three-logo.png";
 import IceGramImageOne from "../assets/icegram-image-one.png";
 import IceGramImageTwo from "../assets/icegram-image-two.png";
+import CalmifyImageOne from "../assets/calmify-image-one.png";
+import CalmifyImageTwo from "../assets/calmify-image-two.png";
+import HangBotImageOne from "../assets/hangbot-image-one.png";
+import HangBotImageTwo from "../assets/hangbot-image-two.png";
+import AThreeWebsiteImageOne from "../assets/assignment-three-image-one.png";
+import AThreeWebsiteImageTwo from "../assets/assignment-three-image-two.png";
+
 
 
 export const ProjectList = [
@@ -32,31 +39,31 @@ export const ProjectList = [
     {
         name: "Calmify",
         logo: CalmifyLogo,
-        skills: "Python, pygame",
-        imageOne: "",
-        imageTwo: "",
-        descriptionOne: "",
-        descriptionTwo: "",
+        skills: "Python, Pygame",
+        imageOne: CalmifyImageOne,
+        imageTwo: CalmifyImageTwo,
+        descriptionOne: "Calmify is a project I collaborated on with Faris Choudhry during UofTHacks VIII. It is a stress-relief application, designed to improve the mental health of users through a series of minigames. The program can be used as a timer for 25 minutes to motivate users to work. Once the timer finishes, a minigame becomes playable with a 5 minute timer. For demo purposes, we decided to create 1 of our 5 minigames called Coin Quest. In this game, the player has to collect as many coins until the timer ends, in order to reach a high score. Along with relaxing music and rewarding sound effects, the game serves as a great way to take a break from work. The 25 minute and 5 minute timers are derived from a time management method called the Pomodoro technique. It is an amazing way to focus on a task, while still regularly taking breaks to avoid the buildup of stress and anxiety. Overall, it thoroughly impacts people by encouraging them to maintain a positive and determined mindset while working by rewarding them with breaks, all of which contribute to a stronger mental health.",
+        descriptionTwo: "We built Calmify using a Python module called Pygame. We programmed a player, button and coin class to keep everything organized and initialized instances with ease. Our main game loop is located in gameloop(). It holds all the code responsible for running Coin Quest. It contains the character movement, game timer and other features such as keeping count of the score. One aspect of the project that I'm proud of us for accomplishing is figuring out how to create the user interface for the main menu. We were able to apply newly gained knowledge about Pygame to create a menu system that seamlessly integrated with the other parts of the program during the hackathon.",
         link: "https://github.com/mansoorhu10/Calmify",
     },
     {
         name: "HangBot",
         logo: HangBotLogo,
-        skills: "Python, pygame",
-        imageOne: "",
-        imageTwo: "",
-        descriptionOne: "",
-        descriptionTwo: "",
+        skills: "Python, Pygame",
+        imageOne: HangBotImageOne,
+        imageTwo: HangBotImageTwo,
+        descriptionOne: "HangBot is a project that I worked on alongside a team of three other members during Hack The North 2020++, an online hackathon. This program is an implementation of the popular game known as 'Hangman'. The word bank includes words that relate to topics like technology and the sciences. Once the game begins, the player can input a guess by pressing a key on their keyboard. There is a score counter, music, and sound effects, as well as win and lose screens. One of the fundamental skills I learned during this project was the ability to manage a large project efficiently. This was my first hackathon project with a group of people, so as a team we learned to collaborate by splitting up tasks and combining separate components that we were simultaneously working on by communicating effectively.",
+        descriptionTwo: "I took responsibility of improving the user's gameplay experience by implementing music and sound effects using the Pygame mixer library. I also aided in creating a string storage system using arrays and efficient conditional statements which contributed to a decrease in unused memory. Additionally, I improved the screen changing system by implementing screen numbers with conditional statements and Boolean variables.",
         link: "https://github.com/Wevie0/HacktheNorth2020",
     },
     {
         name: "A3 Website",
         logo: AssignmentThreeLogo,
         skills: "HTML, CSS",
-        imageOne: "",
-        imageTwo: "",
-        descriptionOne: "",
-        descriptionTwo: "",
+        imageOne: AThreeWebsiteImageOne,
+        imageTwo: AThreeWebsiteImageTwo,
+        descriptionOne: "This is my Assignment 3 submission for an Introduction to Website Design and Development course that I took in the Winter 2022 semester. It incorporates many components of HTML, CSS, and design fundamentals that I learned from the course. The prompt for this assignment was to create an HTML website with an external CSS style sheet that spans across at least three separate webpages and can cover any topic of choice. So, I decided to create a website about one of my favourite foods: sushi.",
+        descriptionTwo: "I focused heavily on making an aesthetically appealing website with amazing UI design. I also specifically included a side navigation menu that links to subheadings within a specific page to improve navigability. In a way, you can consider my project portfolio website an extension of the fundamentals of web design that I applied in this earlier project.",
         link: "https://github.com/mansoorhu10/A3-Website-Design",
     },
 ];

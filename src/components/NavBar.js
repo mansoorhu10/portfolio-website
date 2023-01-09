@@ -11,7 +11,7 @@ const NavBar = () => {
     return (
         <nav className="navbar" id={expandNavbar ? "open" : "close"}>
             <div className="toggleButton">
-                <button onClick={() => setExpandNavBar((prev) => !prev)}> <Reorder /></button>
+                <button onClick={() => setExpandNavBar((prev) => !prev)}><Reorder /></button>
             </div>
 
             <ul className="links">

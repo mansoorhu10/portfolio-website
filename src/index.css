@@ -66,6 +66,7 @@ p {
 
 .invisible-border {
   height: calc(100vh - 40px);
+  padding: 20px;
 }
 
 /* Colour Theme */
@@ -158,6 +159,7 @@ nav.navbar .external li a:hover, a:active {
 
 .toggleButton svg {
   font-size: 50px;
+  color: var(--primary);
 }
 
 .toggleButton button {
@@ -167,6 +169,21 @@ nav.navbar .external li a:hover, a:active {
   color: white;
   cursor: pointer;
 }
+
+#open {
+  height: 100vh;
+}
+
+#open .links {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 100px;
+}
+
+#open .links .external{
+  float: left;
+}
+
 
 @media only screen and (max-width: 900px) {
   .navbar a {
@@ -502,8 +519,9 @@ h3 {
 .first-article-background {
   background-color: var(--secondary);
   height: calc(100vh - 80px);
-  padding-top: 15%;
+  padding-top: 100px;
   width: 100%;
+  padding-bottom: 40px;
 }
 
 .first-article {
@@ -519,6 +537,27 @@ h3 {
 .first-article-text {
   margin-right: 5%;
 }
+
+.second-article-background {
+  background-color: var(--primary);
+  height: calc(100vh - 80px);
+  padding-top: 15%;
+  width: 100%;
+}
+
+.second-article {
+  text-align: left;
+  margin-left: 55%;
+  color: var(--fourth);
+  margin-right: 8%;
+  width: 35%;
+  height: 100%;
+}
+
+.second-article-text ul{
+  list-style-type: square;
+}
+
 
 .paint-window #computer {
   height: 400px;
@@ -1218,6 +1257,10 @@ label {
 .error-text{
   font-family: 'Pixeloid Sans', 'IBM Plex Sans', 'Fira Sans', sans-serif;
   margin-top: 40px;
+}
+
+.error-text ul{
+  list-style-type: square;
 }
 
 .error-logo{
