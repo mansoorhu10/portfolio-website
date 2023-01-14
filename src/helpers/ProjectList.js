@@ -3,6 +3,8 @@ import IceGramLogo from "../assets/icegram-logo-192.png";
 import CalmifyLogo from "../assets/coin-logo.png";
 import HangBotLogo from "../assets/hangbot-logo.png";
 import AssignmentThreeLogo from "../assets/assignment-three-logo.png";
+import TabOrgImageOne from "../assets/taborg-image-one.png";
+import TabOrgImageTwo from "../assets/taborg-image-two.png";
 import IceGramImageOne from "../assets/icegram-image-one.png";
 import IceGramImageTwo from "../assets/icegram-image-two.png";
 import CalmifyImageOne from "../assets/calmify-image-one.png";
@@ -19,8 +21,8 @@ export const ProjectList = [
         name: "TabOrg",
         logo: TabOrgLogo,
         skills: "JavaScript, React, Chrome tabs and storage API, HTML, CSS",
-        imageOne: "",
-        imageTwo: "",
+        imageOne: TabOrgImageOne,
+        imageTwo: TabOrgImageTwo,
         descriptionOne: "TabOrg is a tab organizer chrome extension that is designed to help save google chrome tabs into groups for later use. I built this project from scratch without React and styling initially, for a high school computer science course. Then later on, I reworked the entire extension to create an interactive user interface using React. I had to redo how the extension saves tabs into groups to include new information and so that I could add new features that were not available in the first primitive version of the project. I even updated the manifest_version of the project since the original extension was using a deprecated version, which ultimately pushed me to use the newest Chrome storage API methods to save data.",
         descriptionTwo: "I gained lots of experience using the Chrome tabs and storage API to create functionality for the extension and I also learned about how to use asynchronous functions to load and save data. Aside from the dark mode toggle button, this entire project was designed and created from scratch and because I was inspired by how frustrating it was to manage important tabs that I needed open for school.",
         link: "https://github.com/mansoorhu10/TabOrg",
