@@ -28,7 +28,7 @@ const Resume = () => {
                     <div className="resume-document">
                     <iframe 
                         title="Mansoor Syed - 2022 Resume"
-                        src="https://docs.google.com/document/d/e/2PACX-1vRDai7aMjDjmbnunJ_LsHel3WloReuDfi7DGHmGXRp835imdpU1jc9a0yLnu3_IMg/pub?embedded=true"
+                        src=""
                         height="1400px"
                         width="800px"
                         style={{borderTop: "3px solid black", borderLeft: "3px solid black", borderRight: "3px solid white", borderBottom: "3px solid white"}}
