@@ -24,7 +24,7 @@ export const ProjectList = [
         imageOne: TabOrgImageOne,
         imageTwo: TabOrgImageTwo,
         descriptionOne: "TabOrg is a tab organizer chrome extension that is designed to help save google chrome tabs into groups for later use. I built this project from scratch without React and styling initially, for a high school computer science course. Then later on, I reworked the entire extension to create an interactive user interface using React. I had to redo how the extension saves tabs into groups to include new information and so that I could add new features that were not available in the first primitive version of the project. I even updated the manifest_version of the project since the original extension was using a deprecated version, which ultimately pushed me to use the newest Chrome storage API methods to save data.",
-        descriptionTwo: "I gained lots of experience using the Chrome tabs and storage API to create functionality for the extension and I also learned about how to use asynchronous functions to load and save data. Aside from the dark mode toggle button, this entire project was designed and created from scratch and because I was inspired by how frustrating it was to manage important tabs that I needed open for school.",
+        descriptionTwo: "I gained lots of experience using the Chrome tabs and storage API to create functionality for the extension and I also learned about how to use asynchronous functions in JavaScript. Aside from the dark mode toggle button, this entire project was designed and created from scratch and because I was inspired by how frustrating it was to manage important tabs that I needed open for school.",
         link: "https://github.com/mansoorhu10/TabOrg",
         
     },
@@ -34,8 +34,8 @@ export const ProjectList = [
         skills: "Firebase, React, JavaScript, HTML, CSS",
         imageOne: IceGramImageOne,
         imageTwo: IceGramImageTwo,
-        descriptionOne: "IceGram is a photo gallery web app created with React and Firebase. This was an edit of the project tutorial called FireGram. Users can add images to the site and view them later as they are saved in a non-relational database. I learned how to use Firebase's firestore and storage to save images. I also used the framer-motion library to aid in creating aesthetically pleasing animations for adding images to the webpage.",
-        descriptionTwo: "It also includes features like being able to click on an image in order to enlarge it and tracking the progress of an image being uploaded to the webpage and displaying it using a progress bar with JavaScript logic. I also learned how to effectively use 'display: grid' to organize items on a webpage.",
+        descriptionOne: "IceGram is a photo gallery web app created with React and Firebase. This was an edit of a YouTube project tutorial called FireGram. Users can add images to the site and view them later as they are saved in a non-relational database. I learned how to use Firebase's firestore and storage to save images. I also used the framer-motion library to aid in creating aesthetically pleasing animations for adding images to the webpage.",
+        descriptionTwo: "It also includes features like being able to click on an image in order to enlarge it and tracking the progress of an image being uploaded to the webpage and displaying it using a progress bar with JavaScript logic. I hope to continue working on this project in the future by learning how to add user authentication to it and learning how to improve security for the database that stores data.",
         link: "https://github.com/mansoorhu10/icegram",
     },
     {
@@ -65,7 +65,7 @@ export const ProjectList = [
         imageOne: AThreeWebsiteImageOne,
         imageTwo: AThreeWebsiteImageTwo,
         descriptionOne: "This is my Assignment 3 submission for an Introduction to Website Design and Development course that I took in the Winter 2022 semester. It incorporates many components of HTML, CSS, and design fundamentals that I learned from the course. The prompt for this assignment was to create an HTML website with an external CSS style sheet that spans across at least three separate webpages and can cover any topic of choice. So, I decided to create a website about one of my favourite foods: sushi.",
-        descriptionTwo: "I focused heavily on making an aesthetically appealing website with amazing UI design. I also specifically included a side navigation menu that links to subheadings within a specific page to improve navigability. In a way, you can consider my project portfolio website an extension of the fundamentals of web design that I applied in this earlier project.",
+        descriptionTwo: "I focused heavily on making an aesthetically appealing website with amazing UI design. I also specifically included a side navigation menu that links to subheadings within a specific page to improve navigability. The project portfolio website you are on right now builds on the fundamentals of web design that I applied in this earlier project.",
         link: "https://github.com/mansoorhu10/A3-Website-Design",
     },
 ];

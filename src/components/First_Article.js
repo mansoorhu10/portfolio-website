@@ -9,21 +9,20 @@ const FirstArticle = () => {
                 <div className='first-article-text'>
                     <h3>Who Am I?</h3>
                     <p>
-                        I'm a Software Engineering Co-op student at the University of Guelph. I am passionate about coding, video games, and creating things!
-                        
+                        I'm a Software Engineering Co-op student at the University of Guelph. I am a passionate, detail-oriented and motivated programmer. In my free time, I like tinkering around with different technologies to expand my knowledge and skill set.
                     </p>
                     
                     <p>
-                        Here is a list of languages, frameworks, and libraries that I have learned and have experience working with to create projects:
+                        Here is a list of languages and libraries that I have learned and have experience working with to create projects:
                         <ul>
-                            <li>JavaScript</li>
-                            <li>Java</li>
-                            <li>React</li>
                             <li>C</li>
+                            <li>Java</li>
+                            <li>JavaScript</li>
                             <li>Python</li>
-                            <li>Pygame</li>
+                            <li>React</li>
                             <li>HTML</li>
                             <li>CSS</li>
+                            <li>SQL (Currently Learning)</li>
                         </ul>
                     </p>
                 </div>

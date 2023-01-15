@@ -490,7 +490,7 @@ h1 {
 
 h3 {
   font-family: 'IBM Plex Sans Bold', sans-serif;
-  font-size: 40px;
+  font-size: 38px;
 }
 
 .logo-container {
@@ -1050,6 +1050,14 @@ label {
   background: var(--fifth);
 }
 
+/* Contact Success */
+
+.contact-success h1 {
+  color: white;
+  text-align: center;
+  padding: 200px;
+}
+
 /* Resume Page */
 .resume-page {
   height: calc(100vh - 100px);
@@ -1167,14 +1175,6 @@ label {
   margin-left: 250px;
 }
 
-.project .project-name {
-  
-}
-
-.project-skills {
-
-}
-
 .project .logo-child {
   background-color: var(--fourth);
   border-top: 3px solid white;
@@ -1270,5 +1270,3 @@ label {
   float: left;
   margin-top: -25px;
 }
-
-

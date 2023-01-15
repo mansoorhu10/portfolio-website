@@ -53,7 +53,7 @@ const Title = () => {
                         <h1>Hey there, I'm Mansoor.</h1>
                         <h3><Typewriter 
                             options={{
-                                strings: ["I'm a Software Developer.", "I'm a Fighting Game Player.", "I'm a Coffee Connoisseur.", "I'm a Tech Enthusiast."],
+                                strings: ["I'm an Aspiring Software Developer.", "I'm a Coffee Connoisseur.", "I Love Creating Things."],
                                 autoStart: true,
                                 loop: true,
                                 delay: 70,
@@ -62,16 +62,8 @@ const Title = () => {
                             }}
                         /></h3>
                         <div className="logo-container">
-                            <motion.div whileHover={{
-                                boxShadow: "0px 0px 8px rgb(167, 11, 11)",
-                                scale: 1.2,
-                            }} 
-                            className="logo-child"><a href="https://github.com/mansoorhu10" target={"_blank"} rel="noreferrer"><GitHub /></a></motion.div>
-                            <motion.div whileHover={{
-                                boxShadow: "0px 0px 8px rgb(167, 11, 11)",
-                                scale: 1.2
-                            }} 
-                            className="logo-child"><a href="https://www.linkedin.com/in/mansoor-syed-83b45b23b" target={"_blank"} rel="noreferrer"><LinkedIn /></a></motion.div>
+                            <div className="logo-child"><a href="https://github.com/mansoorhu10" target={"_blank"} rel="noreferrer"><GitHub /></a></div>
+                            <div className="logo-child"><a href="https://www.linkedin.com/in/mansoor-syed-83b45b23b" target={"_blank"} rel="noreferrer"><LinkedIn /></a></div>
                         </div>
                     </div>
                 </div>
