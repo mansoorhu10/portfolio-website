@@ -6,7 +6,7 @@ const Contact = () => {
     const key = "6b9cb0844889dae6195a7031e4e8bc90";
     const formSubmitAddress = `https://formsubmit.co/${key}`;
 
-    const domainName = "localhost:3000";
+    const domainName = "https://mansoorsyed.netlify.app";
     const successURL = "/contact/success";
 
     const successPage = domainName + successURL;
