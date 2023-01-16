@@ -48,8 +48,8 @@ body {
   background: var(--third); 
   border-style: solid;
   border-width: 2px;
-  border-top-color: var(--fifth);
-  border-left-color: var(--fifth);
+  border-top-color: white;
+  border-left-color: white;
   border-right-color: var(--primary);
   border-bottom-color: var(--primary);
 }
@@ -953,8 +953,8 @@ label {
   margin-top: 20px;
   border-style: solid;
   border-width: 2px;
-  border-top-color: var(--fifth);
-  border-left-color: var(--fifth);
+  border-top-color: white;
+  border-left-color: white;
   border-right-color: var(--primary);
   border-bottom-color: var(--primary);
   margin-bottom: 20px;
