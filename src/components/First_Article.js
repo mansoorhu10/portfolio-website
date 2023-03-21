@@ -22,7 +22,7 @@ const FirstArticle = () => {
                             <li>React</li>
                             <li>HTML</li>
                             <li>CSS</li>
-                            <li>SQL (Currently Learning)</li>
+                            <li>SQL</li>
                         </ul>
                     </p>
                 </div>
