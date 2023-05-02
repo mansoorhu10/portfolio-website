@@ -14,4 +14,4 @@ I had to reduce the scope of the original vision I had for the website once I re
 
   * Using react-bootstrap as a front-end framework to make sure the website is viewable through multiple window sizes.
   * Adding more detail to the individual project pages like ```iframe``` interactivity and using gifs to display project functionality.
-  * Adding more interactivity to the various windows that have a close, maximize and minimize button by using AJAX functions.
+  * Adding more interactivity to the various retro windows that have a close, maximize and minimize button by using AJAX functions.
