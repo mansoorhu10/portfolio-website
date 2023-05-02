@@ -18,6 +18,7 @@ const ProjectDisplay = () => {
                 <h2><strong><NavLink to="/projects" className="back-button"> &larr; Back </NavLink></strong></h2>
             </div>
             
+            
             <motion.div 
                 initial={{opacity: 0,}}
                 animate={{opacity: 1,}}
@@ -63,10 +64,7 @@ const ProjectDisplay = () => {
                             <b>View the project source code here:</b> 
                         </p>
                         <div className="logo-child"><a href={project.link} target={"_blank"} rel="noreferrer"><GitHub /></a></div>
-
                     </div>
-
-                    
 
                 </p>
             </motion.div>

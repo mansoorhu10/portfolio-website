@@ -1151,7 +1151,7 @@ label {
 .project {
   margin-left: 5%;
   margin-top: 50px;
-  margin-right: 10%;
+  margin-right: 5%;
   margin-bottom: 200px;
   color: white;
 }
@@ -1159,6 +1159,11 @@ label {
 .project h1 {
   font-family: 'IBM Plex Sans Bold', 'Fira Sans', sans-serif;
   display: inline-block;
+}
+
+.project-article{
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 .project .project-logo {
@@ -1173,12 +1178,8 @@ label {
 }
 
 .image-one {
-  width: 100%;
+  max-width: 800px;
   height: auto;
-}
-
-.project-article {
-  margin-left: 250px;
 }
 
 .project .logo-child {
@@ -1191,7 +1192,6 @@ label {
   height: 90px;
 
 }
-
 
 .project .logo-child svg {
   width: 100%;
@@ -1221,7 +1221,7 @@ label {
 
 .back-button {
   font-family: 'Pixeloid Sans', 'IBM Plex Sans', 'Fira Sans', sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   background-color: var(--third);
   color:white;
   border-top: 3px solid white;
@@ -1230,7 +1230,6 @@ label {
   border-bottom: 3px solid black;
   text-decoration: none;
   padding: 15px;
-  float: left;
   margin-top: 40px;
   
 }
@@ -1353,6 +1352,50 @@ label {
 
   .contact-close-container {
     display: none;
+  }
+
+  .image-one {
+    max-width: 300px;
+  }
+
+  .back-button {
+    font-size: 20px;
+  }
+
+  .project-article h1 {
+    font-size: 30px;
+  }
+
+  .project-article p {
+    font-size: 18px;
+  }
+
+  .project .project-logo {
+    width: 45px;
+    height: 45px;
+    float: right;
+    margin-top: 19px;
+  }
+  
+  .project-writing .logo-child svg {
+    font-size: 20px;
+  }
+
+  .source-code {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .source-text {
+    text-align: center;
+  }
+
+  .source-code .logo-child {
+    height: 70px;
+    width: 70px;
+    display: block;
+    margin: auto;
+    
   }
 
 }
