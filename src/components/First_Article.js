@@ -16,13 +16,15 @@ const FirstArticle = () => {
                         Here is a list of languages and libraries that I have learned and have experience working with to create projects:
                         <ul>
                             <li>C</li>
-                            <li>Java</li>
                             <li>JavaScript</li>
                             <li>Python</li>
+                            <li>Java</li>
                             <li>React</li>
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>SQL</li>
+                            <li>jQuery</li>
+                            <li>Firebase</li>
                         </ul>
                     </p>
                 </div>

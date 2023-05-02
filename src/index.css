@@ -67,6 +67,7 @@ p {
 .invisible-border {
   height: calc(100vh - 40px);
   padding: 20px;
+  position: relative;
 }
 
 /* Colour Theme */
@@ -174,16 +175,16 @@ nav.navbar .external li a:hover, a:active {
   height: 100vh;
 }
 
-#open .links {
+#open nav.navbar ul {
   flex-direction: column;
   justify-content: flex-start;
   margin-bottom: 100px;
 }
 
-#open .links .external{
-  float: left;
+#open a {
+  width: 100%;
+  text-align: center;
 }
-
 
 @media only screen and (max-width: 900px) {
   .navbar a {
@@ -196,6 +197,10 @@ nav.navbar .external li a:hover, a:active {
     display: flex;
   }
   #close a {
+    display: none;
+  }
+
+  .external {
     display: none;
   }
 }
@@ -213,7 +218,7 @@ nav.navbar .external li a:hover, a:active {
     height: 100px;
   }
 
-  #open .links {
+  #open nav.navbar ul {
     flex-direction: row;
   }
 }
@@ -227,6 +232,7 @@ nav.navbar .external li a:hover, a:active {
   top: calc((100vh - 100px - 546px) / 2);
   left: calc((100vw - 10px - 762px) / 2);
 }
+
 
 .top-background {
   position: absolute;
@@ -1117,8 +1123,8 @@ label {
   width: 30vw;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: left;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .project-item {
@@ -1143,9 +1149,9 @@ label {
 /* Dynamic Project Pages */
 
 .project {
-  margin-left: 50px;
+  margin-left: 5%;
   margin-top: 50px;
-  margin-right: 300px;
+  margin-right: 10%;
   margin-bottom: 200px;
   color: white;
 }
@@ -1269,4 +1275,84 @@ label {
   padding-right: 25px;
   float: left;
   margin-top: -25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .toggleButton {
+    display: flex;
+  }
+  #close a {
+    display: none;
+  }
+
+  nav.navbar .internal li {
+    display: inline;
+  }
+
+  .links {
+    margin-left: calc((100vw - 164px - 64px) / 2) 
+  }
+
+  .retro-window {
+    width: 350px;
+    height: 251px;
+    top: calc((100vh - 350) / 2);
+    left: calc((100vw - 100px - 251px) / 2);
+  }
+
+  .retro-window h1 {
+    font-size: 26px;
+  }
+  
+  .retro-window h3 {
+    font-size: 15px;
+  }
+
+  .retro-window .logo-container{
+    width: 40%;
+  }
+
+  .retro-window .logo-child svg {
+    font-size: 40px;
+  }
+
+  .paint-window {
+    display: none;
+  }
+
+  .first-article-text h3{
+    font-size: 30px;
+  }
+
+  .first-article-text p {
+    font-size: 18px;
+  }
+
+  .project-list {    
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-text {
+    display: none;
+  }
+
+  .contact-window {
+    width: 350px;
+    height: 313px;
+  }
+
+  .contact-top-bar {
+    width: 347px;
+  }
+
+  .contact-container {
+    margin-left: calc((100vw - 347px) / 2);
+    padding-top: 0%;
+  }
+
+  .contact-close-container {
+    display: none;
+  }
+
 }

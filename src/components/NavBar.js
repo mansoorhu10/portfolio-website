@@ -1,5 +1,5 @@
-import { React } from "react";
-import { NavLink } from "react-router-dom";
+import { React, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { GitHub, LinkedIn, Reorder } from "@mui/icons-material";
 
@@ -7,6 +7,11 @@ import { GitHub, LinkedIn, Reorder } from "@mui/icons-material";
 const NavBar = () => {
 
     const [expandNavbar, setExpandNavBar] = useState(false);
+    const location = useLocation();
+
+    useEffect(() => {
+        setExpandNavBar(false);
+    }, [location]);
 
     return (
         <nav className="navbar" id={expandNavbar ? "open" : "close"}>

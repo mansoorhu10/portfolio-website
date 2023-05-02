@@ -44,13 +44,16 @@ const Contact = () => {
                                     <div className="contact-top-background-highlight"></div>
                                 </div>
                                 
-                                <div className="close-container">
-                                    <div className="contact-close-square-button"></div>
-                                    <div className="contact-close-left-highlight"></div>
-                                    <div className="contact-close-top-highlight"></div>
-                                    <div className="contact-left-close-sign"></div>
-                                    <div className="contact-right-close-sign"></div>
+                                <div className="contact-close-container">
+                                    <div className="close-container">
+                                        <div className="contact-close-square-button"></div>
+                                        <div className="contact-close-left-highlight"></div>
+                                        <div className="contact-close-top-highlight"></div>
+                                        <div className="contact-left-close-sign"></div>
+                                        <div className="contact-right-close-sign"></div>
+                                    </div>
                                 </div>
+                                
                                 
                                 <div className="contact-rest-window">
                                     <form className="contact-form" action={formSubmitAddress} method="POST">
