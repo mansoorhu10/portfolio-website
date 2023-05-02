@@ -18,7 +18,6 @@ const ProjectDisplay = () => {
                 <h2><strong><NavLink to="/projects" className="back-button"> &larr; Back </NavLink></strong></h2>
             </div>
             
-            
             <motion.div 
                 initial={{opacity: 0,}}
                 animate={{opacity: 1,}}
