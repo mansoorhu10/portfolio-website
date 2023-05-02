@@ -6,7 +6,7 @@ const ContactSuccess = () => {
     return (
         <div className="contact-page">
             <div className="contact-half">
-                <div className="contact-contatiner">
+                <div>
                     <motion.div 
                     initial={{opacity: 0,}}
                     animate={{opacity: 1,}}
