@@ -903,8 +903,8 @@ h3 {
 
 input-row {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 70px;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
 
 .input-row > .input-group {
@@ -913,6 +913,8 @@ input-row {
 }
 input {
   width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
   border-style: solid;
   border-width: 2px;
   border-right-color: var(--sixth);
@@ -1301,6 +1303,10 @@ label {
     margin-left: calc((100vw - 164px - 64px) / 2) 
   }
 
+  .first-article-background {
+    padding-bottom: 10vh;
+  }
+
   .retro-window {
     width: 350px;
     height: 251px;
@@ -1339,6 +1345,10 @@ label {
   .project-list {    
     width: 100vw;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-page {
+    padding-bottom: 800px;
   }
 
   .contact-text {

@@ -10,9 +10,6 @@ const ProjectDisplay = () => {
     const { id } = useParams();
     const numberOfProjects = ProjectList.length;
     const validIds = [...Array(numberOfProjects).keys()];
-    console.log(validIds);
-    console.log(id);
-    console.log(validIds.includes(id));
 
     if(validIds.includes(parseInt(id)) === false){
         return (
