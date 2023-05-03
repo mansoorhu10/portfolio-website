@@ -4,69 +4,83 @@ import { ProjectList } from "../helpers/ProjectList";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { GitHub } from "@mui/icons-material";
+import NotFound from "./NotFound";
 
 const ProjectDisplay = () => {
     const { id } = useParams();
+    const numberOfProjects = ProjectList.length;
+    const validIds = [...Array(numberOfProjects).keys()];
+    console.log(validIds);
+    console.log(id);
+    console.log(validIds.includes(id));
+
+    if(validIds.includes(parseInt(id)) === false){
+        return (
+            <NotFound />
+        )
+    }
+
     const project = ProjectList[id];
     const logoAlt = project.name + " Logo";
     const imageOneAlt = "An image displaying what " + project.name + " looks like";
 
     return  (
-        <div className="project">
-
-            <div>
-                <h2><strong><NavLink to="/projects" className="back-button"> &larr; Back </NavLink></strong></h2>
-            </div>
-            
-            <motion.div 
-                initial={{opacity: 0,}}
-                animate={{opacity: 1,}}
-                transition={{duration: 0.5}}
-
-            className="project-article">
-                <div className="project-name">
-                    <img src={project.logo} alt={logoAlt} className="project-logo" />
-                    <h1>{project.name}</h1>
+        <div>
+            <div className="project">
+                <div>
+                    <h2><strong><NavLink to="/projects" className="back-button"> &larr; Back </NavLink></strong></h2>
                 </div>
+                
+                <motion.div 
+                    initial={{opacity: 0,}}
+                    animate={{opacity: 1,}}
+                    transition={{duration: 0.5}}
 
-                <hr />
+                className="project-article">
+                    <div className="project-name">
+                        <img src={project.logo} alt={logoAlt} className="project-logo" />
+                        <h1>{project.name}</h1>
+                    </div>
 
-                <p className="project-writing">
-                    <div className="description-image">
-                        <img className="image-one" src={project.imageOne} alt={imageOneAlt}></img>
-                        
-                        <div className="project-skills">
-                            <b>Skills:</b> {project.skills}
+                    <hr />
+
+                    <p className="project-writing">
+                        <div className="description-image">
+                            <img className="image-one" src={project.imageOne} alt={imageOneAlt}></img>
+                            
+                            <div className="project-skills">
+                                <b>Skills:</b> {project.skills}
+                            </div>
+                        </div>    
+
+                        <br />
+
+                        <div className="project-description">
+                            <p>{project.descriptionOne}</p>
                         </div>
-                    </div>    
 
-                    <br />
+                        <br />
 
-                    <div className="project-description">
-                        <p>{project.descriptionOne}</p>
-                    </div>
+                        <div className="description-image">
+                            <img className="image-one" src={project.imageTwo} alt={imageOneAlt}></img>
+                        </div>
 
-                    <br />
+                        <div className="project-description">
+                            <p>{project.descriptionTwo}</p>
+                        </div>
 
-                    <div className="description-image">
-                        <img className="image-one" src={project.imageTwo} alt={imageOneAlt}></img>
-                    </div>
+                        <br />
 
-                    <div className="project-description">
-                        <p>{project.descriptionTwo}</p>
-                    </div>
+                        <div className="source-code">
+                            <p className="source-text">
+                                <b>View the project source code here:</b> 
+                            </p>
+                            <div className="logo-child"><a href={project.link} target={"_blank"} rel="noreferrer"><GitHub /></a></div>
+                        </div>
 
-                    <br />
-
-                    <div className="source-code">
-                        <p className="source-text">
-                            <b>View the project source code here:</b> 
-                        </p>
-                        <div className="logo-child"><a href={project.link} target={"_blank"} rel="noreferrer"><GitHub /></a></div>
-                    </div>
-
-                </p>
-            </motion.div>
+                    </p>
+                </motion.div>
+            </div>
         </div>
     )
 }

@@ -8,7 +8,6 @@ import ProjectDisplay from "./pages/ProjectDisplay";
 import ContactSuccess from './pages/ContactSuccess';
 import NotFound from './pages/NotFound';
 
-
 function App() {
 
   return (
