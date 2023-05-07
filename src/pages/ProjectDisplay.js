@@ -46,7 +46,7 @@ const ProjectDisplay = () => {
                             <img className="image-one" src={project.imageOne} alt={imageOneAlt}></img>
                             
                             <div className="project-skills">
-                                <b>Skills:</b> {project.skills}
+                                <b>Technologies:</b> {project.skills}
                             </div>
                         </div>    
 
