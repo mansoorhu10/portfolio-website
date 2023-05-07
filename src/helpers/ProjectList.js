@@ -20,7 +20,7 @@ export const ProjectList = [
     {
         name: "TabOrg",
         logo: TabOrgLogo,
-        skills: "JavaScript, React, Chrome tabs and storage API, HTML, CSS",
+        skills: "JavaScript, React, Chrome tabs and storage APIs, HTML, CSS",
         imageOne: TabOrgImageOne,
         imageTwo: TabOrgImageTwo,
         descriptionOne: "TabOrg is a tab organizer chrome extension that is designed to help save google chrome tabs into groups for later use. I built this project from scratch without React and styling initially, for a high school computer science course. Then later on, I reworked the entire extension to create an interactive user interface using React. I had to redo how the extension saves tabs into groups to include new information so that I could add new features that were not available in the first version of the project. I even updated the manifest_version of the project since the original extension was using a deprecated version, which ultimately pushed me to use the newest Chrome storage API methods to save data.",
