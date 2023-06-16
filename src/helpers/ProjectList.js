@@ -1,8 +1,11 @@
+import GroListyLogo from "../assets/grolisty-logo.png";
 import TabOrgLogo from "../assets/TabOrg Logo - 128.png";
 import IceGramLogo from "../assets/icegram-logo-192.png";
 import CalmifyLogo from "../assets/coin-logo.png";
 import HangBotLogo from "../assets/hangbot-logo.png";
 import AssignmentThreeLogo from "../assets/assignment-three-logo.png";
+import GroListyImageOne from "../assets/grolisty-image-one.png";
+import GroListyImageTwo from "../assets/grolisty-image-two.png";
 import TabOrgImageOne from "../assets/taborg-image-one.png";
 import TabOrgImageTwo from "../assets/taborg-image-two.png";
 import IceGramImageOne from "../assets/icegram-image-one.png";
