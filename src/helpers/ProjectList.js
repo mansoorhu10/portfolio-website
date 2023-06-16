@@ -21,6 +21,16 @@ import AThreeWebsiteImageTwo from "../assets/assignment-three-image-two.png";
 
 export const ProjectList = [
     {
+        name: "GroListy",
+        logo: GroListyLogo,
+        skills: "JavaScript, MongoDB, ExpressJS, React, NodeJS, REST APIs, HTML, CSS",
+        imageOne: GroListyImageOne,
+        imageTwo: GroListyImageTwo,
+        descriptionOne: "GroListy is a full-stack grocery list web application built using the MERN stack: MongoDB, ExpressJS, React, and NodeJS. I built this project to expand my web development skills and gain experience building and consuming REST APIs using a modern NoSQL database. Some important skills I have learned include the useReducer hook in React, which allowed me to update the context of the application on the frontend to make it responsive for the user. I added error handling to the item form and implemented useful error messages to display to the user. I also learned how to organize my components, pages and contexts into different folders. Lastly, I used the 60-30-10 color rule with CSS to improve the user interface's design.",
+        descriptionTwo: "I had difficulty implementing REST APIs, so to aid in solving issues I ran into during development, I used Postman to test API endpoints and for regression testing to ensure that they work as intended in later versions. In addition, I created a database schema for each item that is stored in the MongoDB Atlas Database by using the mongoose library. To further improve this project, I plan on adding authentication so that users can log into their personal account and view only items stored in their account. I also plan on adding an expiration date as key information that is tracked separately and is then used to notify the user to throw out expired goods and buy new groceries. One ambitious idea I have for the app, is to create a button that uses machine learning to automatically logs items based on a picture that is used as input.",
+        link: "https://github.com/mansoorhu10/grolisty",
+    },
+    {
         name: "TabOrg",
         logo: TabOrgLogo,
         skills: "JavaScript, React, Chrome tabs and storage APIs, HTML, CSS",
@@ -29,7 +39,6 @@ export const ProjectList = [
         descriptionOne: "TabOrg is a tab organizer chrome extension that is designed to help save google chrome tabs into groups for later use. I built this project from scratch without React and styling initially, for a high school computer science course. Then later on, I reworked the entire extension to create an interactive user interface using React. I had to redo how the extension saves tabs into groups to include new information so that I could add new features that were not available in the first version of the project. I even updated the manifest_version of the project since the original extension was using a deprecated version, which ultimately pushed me to use the newest Chrome storage API methods to save data.",
         descriptionTwo: "I gained lots of experience using the Chrome tabs and storage API to create functionality for the extension and I also learned about how to use asynchronous functions in JavaScript. Aside from the dark mode toggle button, this entire project was designed and created from scratch and because I was inspired by how frustrating it was to manage important tabs that I needed open for school.",
         link: "https://github.com/mansoorhu10/TabOrg",
-        
     },
     {
         name: "IceGram",
