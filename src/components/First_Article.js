@@ -13,7 +13,7 @@ const FirstArticle = () => {
                     </p>
                     
                     <p>
-                        Here is a list of languages and libraries that I have learned and have experience working with to create projects:
+                        Here is a list of languages, libraries, and frameworks that I have learned and have experience working with to create projects:
                         <ul>
                             <li>C</li>
                             <li>JavaScript</li>
@@ -25,6 +25,9 @@ const FirstArticle = () => {
                             <li>SQL</li>
                             <li>jQuery</li>
                             <li>Firebase</li>
+                            <li>MongoDB</li>
+                            <li>ExpressJS</li>
+                            <li>NodeJS</li>
                         </ul>
                     </p>
                 </div>
