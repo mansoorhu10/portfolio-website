@@ -53,7 +53,7 @@ const Title = () => {
                         <h1>Hey there, I'm Mansoor.</h1>
                         <h3><Typewriter 
                             options={{
-                                strings: ["I'm an Aspiring Software Developer.", "I'm a Coffee Connoisseur.", "I Love Creating Things."],
+                                strings: ["I'm a Software Developer.", "I'm a Coffee Connoisseur.", "I Love Creating Things."],
                                 autoStart: true,
                                 loop: true,
                                 delay: 70,
