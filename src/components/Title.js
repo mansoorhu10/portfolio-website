@@ -63,7 +63,7 @@ const Title = () => {
                         /></h3>
                         <div className="logo-container">
                             <div className="logo-child"><a href="https://github.com/mansoorhu10" target={"_blank"} rel="noreferrer"><GitHub /></a></div>
-                            <div className="logo-child"><a href="https://www.linkedin.com/in/mansoor-syed-83b45b23b" target={"_blank"} rel="noreferrer"><LinkedIn /></a></div>
+                            <div className="logo-child"><a href="https://www.linkedin.com/in/mansoor-syed-dev" target={"_blank"} rel="noreferrer"><LinkedIn /></a></div>
                         </div>
                     </div>
                 </div>
