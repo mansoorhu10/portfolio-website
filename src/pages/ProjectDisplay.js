@@ -19,7 +19,7 @@ const ProjectDisplay = () => {
 
     const project = ProjectList[id];
     const logoAlt = project.name + " Logo";
-    const imageOneAlt = "An image displaying what " + project.name + " looks like";
+    const imageAlt = "An image displaying what " + project.name + " looks like";
 
     return  (
         <div>
@@ -43,7 +43,7 @@ const ProjectDisplay = () => {
 
                     <p className="project-writing">
                         <div className="description-image">
-                            <img className="image-one" src={project.imageOne} alt={imageOneAlt}></img>
+                            <img className="image-one" src={project.imageOne} alt={imageAlt}></img>
                             
                             <div className="project-skills">
                                 <b>Technologies:</b> {project.skills}
@@ -59,7 +59,7 @@ const ProjectDisplay = () => {
                         <br />
 
                         <div className="description-image">
-                            <img className="image-one" src={project.imageTwo} alt={imageOneAlt}></img>
+                            <img className="image-one" src={project.imageTwo} alt={imageAlt}></img>
                         </div>
 
                         <div className="project-description">
@@ -68,13 +68,22 @@ const ProjectDisplay = () => {
 
                         <br />
 
+                        {project.imageThree && <div>
+                            <div className="description-image">
+                                <img className="image-one" src={project.imageThree} alt={imageAlt}></img>
+                            </div>
+
+                            <div className="project-description">
+                                <p>{project.descriptionThree}</p>
+                            </div>    
+                        </div> }
+
                         <div className="source-code">
                             <p className="source-text">
                                 <b>View the project source code here:</b> 
                             </p>
                             <div className="logo-child"><a href={project.link} target={"_blank"} rel="noreferrer"><GitHub /></a></div>
                         </div>
-
                     </p>
                 </motion.div>
             </div>
