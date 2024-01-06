@@ -29,12 +29,8 @@ const NavBar = () => {
                     <li><div className="logo-child"><a href="https://github.com/mansoorhu10" target={"_blank"} rel="noreferrer" className="logo-link"><GitHub /></a></div></li>
                     <li><div className="logo-child"><a href="https://www.linkedin.com/in/mansoor-syed-dev" target={"_blank"} rel="noreferrer"><LinkedIn /></a></div></li>
                 </div>
-            
             </ul>
-            
-            
         </nav>
-        
     );
 
 }

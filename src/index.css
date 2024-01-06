@@ -52,6 +52,7 @@ body {
   border-left-color: white;
   border-right-color: var(--primary);
   border-bottom-color: var(--primary);
+  border-radius: 5px;
 }
 
 /* Handle on hover */
@@ -73,10 +74,10 @@ p {
 /* Colour Theme */
 :root {
   --primary: #171212;
-  --secondary: #5F0707;
-  --third: #A70B0B;
-  --fourth: #F6DE26;
-  --fifth: #FEFAEB;
+  --secondary: #020A3A;
+  --third: #3D60A7;
+  --fourth: #B0DAF9;
+  --fifth: #FFFFFF;
   --sixth: #D9D9D9;
 }
 
@@ -90,7 +91,8 @@ nav.navbar {
   position: fixed;
   background-color: var(--fourth);
   z-index: 5;
-  font-family: 'Pixeloid Sans', 'IBM Plex Sans', 'Fira Sans', sans-serif;
+  font-family: 'IBM Plex Sans Bold', 'Fira Sans', sans-serif;
+  font-size: 1.2em;
   border-top: 5px solid white;
 }
 
@@ -117,6 +119,10 @@ nav.navbar .internal li a {
   text-decoration: none;
   background-color: var(--fourth);
 }
+.link{
+  border-style: inset;
+  border-color: transparent;
+}
 
 nav.navbar .internal li a:hover, a:active {
   color: var(--fifth);
@@ -125,6 +131,7 @@ nav.navbar .internal li a:hover, a:active {
   border-left: 3px solid var(--fifth);
   border-right: 3px solid var(--primary);
   border-bottom: 3px solid var(--primary);
+  border-radius: 5px;
 }
 
 nav.navbar .external li a:hover, a:active {
@@ -137,6 +144,7 @@ nav.navbar .external li a:hover, a:active {
   border-left: 3px solid var(--fifth);
   border-right: 3px solid var(--primary);
   border-bottom: 3px solid var(--primary);
+  border-radius: 5px;
 }
 
 .external {
@@ -235,8 +243,16 @@ nav.navbar .external li a:hover, a:active {
   z-index: 3;
   top: calc((100vh - 100px - 546px) / 2);
   left: calc((100vw - 10px - 762px) / 2);
+  background-color: var(--fourth);
+  border-radius: 10px;
+  box-shadow: 10px 10px 8px black;
+  border-style: inset;
+  border-top-color: black;
+  border-left-color: black;
+  border-bottom-color: var(--fifth);
+  border-right-color: var(--fifth);
+  
 }
-
 
 .top-background {
   position: absolute;
@@ -245,6 +261,9 @@ nav.navbar .external li a:hover, a:active {
   left: 0px;
   top: 0px;
   background: var(--fourth);
+  border-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .top-bar {
@@ -254,6 +273,9 @@ nav.navbar .external li a:hover, a:active {
   top: 0.61%;
   bottom: 90.56%;
   background: var(--secondary);
+  border-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .minus-square-button {
@@ -263,6 +285,12 @@ nav.navbar .external li a:hover, a:active {
   top: 1.67%;
   bottom: 91.63%;
   background: var(--fourth);
+  border-style: inset;
+  border-top-color: var(--primary);
+  border-left-color: var(--primary);
+  border-bottom-color: var(--fifth);
+  border-right-color: var(--fifth);
+  border-width: 2px;
 }
 
 .close-square-button {
@@ -272,6 +300,12 @@ nav.navbar .external li a:hover, a:active {
   top: 1.67%;
   bottom: 91.63%;
   background: var(--fourth);
+  border-style: inset;
+  border-top-color: var(--primary);
+  border-left-color: var(--primary);
+  border-bottom-color: var(--fifth);
+  border-right-color: var(--fifth);
+  border-width: 2px;
 }
 
 .maximize-square-button {
@@ -281,8 +315,15 @@ nav.navbar .external li a:hover, a:active {
   top: 1.67%;
   bottom: 91.63%;
   background: var(--fourth);
+  border-style: inset;
+  border-top-color: var(--primary);
+  border-left-color: var(--primary);
+  border-bottom-color: var(--fifth);
+  border-right-color: var(--fifth);
+  border-width: 2px;
 }
 
+/*
 .minus-left-highlight {
   position: absolute;
   left: 77.32%;
@@ -292,6 +333,7 @@ nav.navbar .external li a:hover, a:active {
   background: var(--fifth);
 }
 
+
 .minus-top-highlight {
   position: absolute;
   width: 5.88%;
@@ -300,6 +342,7 @@ nav.navbar .external li a:hover, a:active {
   top: 1.67%;
   background-color: var(--fifth);
 }
+
 
 .maximize-left-highlight {
   position: absolute;
@@ -336,6 +379,7 @@ nav.navbar .external li a:hover, a:active {
   top: 1.67%;
   background: var(--fifth);
 }
+*/
 
 .minus-sign {
   position: absolute;
@@ -412,11 +456,20 @@ nav.navbar .external li a:hover, a:active {
 
 .top-left {
   position: absolute;
-  top: 13.698%;
-  left: 6.979%;
+  margin-top: 7px;
+  top: 11%;
+  left: 3%;
+  padding: 3%;
+  background-color: var(--fifth);
+  padding-bottom: 10%;
+  border-style: inset;
+  border-top-color: var(--primary);
+  border-left-color: var(--primary);
+  border-bottom-color: var(--sixth);
+  border-right-color: var(--sixth);
 }
 
-.top-background-highlight {
+/* .top-background-highlight {
   position: absolute;
   width: 0.2551%;
   height: 9.284%;
@@ -424,6 +477,7 @@ nav.navbar .external li a:hover, a:active {
   top: 0.109%;
   background: var(--fifth);
 }
+*/
 
 .top-container:hover {
   cursor: move;
@@ -585,7 +639,7 @@ h3 {
   height: 621px;   
   margin-right: 20%;
   z-index: 1;
-  background-color: #FFFFFF;
+  background-color: var(--primary);
 }
 
 .paint-window-container {
@@ -601,16 +655,27 @@ h3 {
   height: 38px;
   left: 0px;
   top: 0px;
-  background: #F6DE26;
+  background: var(--fourth);
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-style: inset;
+  border-top-color: black;
+  border-left-color: black;
+  border-right-color: var(--fifth);
+  border-bottom-width: 0px;
 }
 
 .paint-top-bar {
   position: absolute;
-  left: 0.91%;
-  right: 0.91%;
-  top: 0.81%;
+  left: 1.21%;
+  right: 0.61%;
+  top: 1.01%;
   bottom: 93.88%;
-  background: #5F0707;
+  background: var(--secondary);
+  border-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .paint-minus-square-button {
@@ -619,7 +684,13 @@ h3 {
   right: 14.78%;
   top: 1.61%;
   bottom: 94.69%;
-  background: #F6DE26;
+  background: var(--fourth);
+  border-style: inset;
+  border-top-color: black;
+  border-left-color: black;
+  border-right-color: var(--fifth);
+  border-bottom-color: var(--fifth);
+  border-width: 1px;
 }
 
 .paint-close-square-button {
@@ -628,7 +699,13 @@ h3 {
   right: 2.19%;
   top: 1.61%;
   bottom: 94.69%;
-  background: #F6DE26;
+  background: var(--fourth);
+  border-style: inset;
+  border-top-color: black;
+  border-left-color: black;
+  border-right-color: var(--fifth);
+  border-bottom-color: var(--fifth);
+  border-width: 1px;
 }
 
 .paint-maximize-square-button {
@@ -637,9 +714,16 @@ h3 {
   right: 8.39%;
   top: 1.61%;
   bottom: 94.69%;
-  background: #F6DE26;
+  background: var(--fourth);
+  border-style: inset;
+  border-top-color: black;
+  border-left-color: black;
+  border-right-color: var(--fifth);
+  border-bottom-color: var(--fifth);
+  border-width: 1px;
 }
 
+/*
 .paint-minus-left-highlight {
   position: absolute;
   left: 79.93%;
@@ -647,7 +731,7 @@ h3 {
   top: 1.61%;
   bottom: 94.69%;
 
-  background: #FEFAEB;
+  background: var(--fifth);
 }
 
 .paint-maximize-left-highlight {
@@ -657,7 +741,7 @@ h3 {
   top: 1.61%;
   bottom: 94.69%;
 
-  background: #FEFAEB;
+  background: var(--fifth);
 }
 
 .paint-close-left-highlight {
@@ -667,8 +751,9 @@ h3 {
   top: 1.61%;
   bottom: 94.69%;
 
-  background: #FEFAEB;
+  background: var(--fifth);
 }
+*/
 
 .paint-minus-sign {
   position: absolute;
@@ -677,7 +762,7 @@ h3 {
   top: 4.67%;
   bottom: 95.17%;
 
-  background: #171212;
+  background: var(--primary);
 }
 
 .paint-right-maximize-sign {
@@ -687,10 +772,22 @@ h3 {
   top: 2.42%;
   bottom: 95.33%;
   
-  background: #171212;
+  background: var(--primary);
   
 }
 
+.paint-rest-window {
+  border-radius: 10px;
+  box-shadow: 10px 10px 8px black;
+  border-style: inset;
+  border-top-color: black;
+  border-left-color: black;
+  border-bottom-color: var(--fifth);
+  border-right-color: var(--fifth);
+  height: auto;
+}
+
+/*
 .paint-minus-top-highlight {
   position: absolute;
   left: 79.93%;
@@ -698,7 +795,7 @@ h3 {
   top: 1.61%;
   bottom: 98.23%;
   
-  background: #FEFAEB;
+  background: var(--fifth);
 }
 
 .paint-maximize-top-highlight {
@@ -708,8 +805,9 @@ h3 {
   top: 1.61%;
   bottom: 98.23%;
   
-  background: #FEFAEB;
+  background: var(--fifth);
 }
+*/
 
 .paint-top-maximize-sign {
   position: absolute;
@@ -718,7 +816,7 @@ h3 {
   top: 2.42%;
   bottom: 97.1%;
   
-  background: #171212;
+  background: var(--primary);
 }
 
 .paint-left-maximize-sign {
@@ -728,7 +826,7 @@ h3 {
   top: 2.42%;
   bottom: 95.33%;
   
-  background: #171212;
+  background: var(--primary);
 }
 
 .paint-bottom-maximize-sign {
@@ -738,9 +836,10 @@ h3 {
   top: 4.51%;
   bottom: 95.33%;
   
-  background: #171212;
+  background: var(--primary);
 }
 
+/*
 .paint-close-top-highlight {
   position: absolute;
   left: 92.52%;
@@ -748,8 +847,9 @@ h3 {
   top: 1.61%;
   bottom: 98.23%;
   
-  background: #FEFAEB;
+  background: var(--fifth);
 }
+*/
 
 .paint-left-close-sign {
   position: absolute;
@@ -758,7 +858,7 @@ h3 {
   top: 3.52%;
   bottom: 96.3%;
   
-  background: #171212;
+  background: var(--primary);
   transform: rotate(45deg);
 }
 
@@ -770,18 +870,20 @@ h3 {
   bottom: 96.3%;
   width: 3.5%;
 
-  background: #171212;
+  background: var(--primary);
   transform: rotate(-45deg);
 }
 
+/*
 .paint-top-background-highlight {
   position: absolute;
   width: 3px;
   height: 37px;
   left: 1px;
   top: 1px;
-  background: #FFFFFF;
+  background: var(--fifth);
 }
+*/
 
 .paint-minus-container:hover > .paint-minus-square-button {
   background: var(--fifth);
@@ -891,6 +993,7 @@ h3 {
   height: 546px;
   position: absolute;
   margin-top: 30px;
+  box-shadow: 16px 25px 8px black;
 }
 
 .contact-form {
@@ -969,6 +1072,7 @@ label {
   border-right-color: var(--primary);
   border-bottom-color: var(--primary);
   margin-bottom: 20px;
+  border-radius: 5px;
 }
 
 .submit-button:hover {
@@ -978,12 +1082,20 @@ label {
 .contact-close-square-button {
   width: 44.89px;
   height: 36.59px;
-  left: 91.3%;
-  top: 1.67%;
+  left: 89.3%;
+  top: 2.67%;
   background: var(--fourth);
   position: absolute;
+  border-width: 2px;
+  border-style: inset;
+  border-width: 2px;
+  border-left-color: black;
+  border-top-color: black;
+  border-right-color: var(--fifth);
+  border-bottom-color: var(--fifth);
 }
 
+/*
 .contact-close-left-highlight {
   width: 1.69px;
   height: 36.59px;
@@ -1003,13 +1115,14 @@ label {
   background: var(--fifth);
 
 }
+*/
 
 .contact-left-close-sign {
   height: 1.5px;
   width: 26.71px;
   position: absolute;
-  left: 92.93%;
-  top: 5.02%;
+  left: 91.13%;
+  top: 6.22%;
   background: var(--primary);
   transform: rotate(45deg);
 }
@@ -1018,29 +1131,39 @@ label {
   height: 1.5px;
   width: 26.71px;
   position: absolute;
-  left: 92.88%;
-  top: 4.9847%;
+  left: 90.98%;
+  top: 6.1847%;
   background: var(--primary);
   transform: rotate(-45deg);
-
 }
 
 .contact-top-background {
   position: absolute;
   width: 100%;
-  height: 57.88px;
+  height: 59.88px;
   left: 0px;
   top: 0px;
   background: var(--fourth);
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-style: inset;
+  border-left-color: black;
+  border-top-color: black;
+  border-right-color: var(--fifth);
+  border-bottom-width: 0px;
 }
 
 .contact-top-bar {
   position: absolute;
-  left: 0.44%;
-  top: 0.61%;
-  width: 604.6px;
-  height: 48.22px;
+  left: 1.44%;
+  top: 1.41%;
+  width: 596.6px;
+  height: 54.22px;
   background: var(--secondary);
+  border-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .contact-rest-window {
@@ -1050,8 +1173,19 @@ label {
   left: 0%;
   top: 9.437%;
   background: var(--fourth);
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  box-shadow: 5px 10px 8px black;
+  border-style: inset;
+  border-top-width: 0px;
+  border-left-color: black;
+  border-bottom-color: var(--fifth);
+  border-right-color: var(--fifth);
+  margin-top: 10px;
 }
 
+/*
 .contact-top-background-highlight {
   position: absolute;
   width: 1.94px;
@@ -1060,6 +1194,7 @@ label {
   top: 0.109%;
   background: var(--fifth);
 }
+*/
 
 /* Contact Success */
 
@@ -1225,7 +1360,7 @@ label {
 }
 
 .back-button {
-  font-family: 'Pixeloid Sans', 'IBM Plex Sans', 'Fira Sans', sans-serif;
+  font-family: 'IBM Plex Sans Bold', 'Fira Sans', sans-serif;
   font-size: 30px;
   background-color: var(--third);
   color:white;
@@ -1235,7 +1370,7 @@ label {
   border-bottom: 3px solid black;
   text-decoration: none;
   padding: 15px;
-  
+  border-radius: 5px;
 }
 
 .back-button:active {
@@ -1271,7 +1406,7 @@ label {
 }
 
 .error-text{
-  font-family: 'Pixeloid Sans', 'IBM Plex Sans', 'Fira Sans', sans-serif;
+  font-family: 'IBM Plex Sans', 'Fira Sans', sans-serif;
   margin-top: 40px;
 }
 

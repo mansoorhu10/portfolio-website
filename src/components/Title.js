@@ -16,7 +16,7 @@ const Title = () => {
         className="invisible-border"> 
             <Draggable handle="#handle" bounds='parent' className='draggable-paint'>
                 <div className="retro-window">
-                    
+
                     <div id="handle" className="top-container">
                         <div className="top-background"></div>
                         <div className="top-bar"></div>
@@ -48,7 +48,6 @@ const Title = () => {
                         <div className="right-maximize-sign"></div>
                     </div>
                     
-                    <img alt="bottom half of retro window" class="rest-window" src="/rest-window@1x.svg"></img>
                     <div className="top-left">
                         <h1>Hey there, I'm Mansoor.</h1>
                         <h3><Typewriter 
@@ -66,8 +65,11 @@ const Title = () => {
                             <div className="logo-child"><a href="https://www.linkedin.com/in/mansoor-syed-dev" target={"_blank"} rel="noreferrer"><LinkedIn /></a></div>
                         </div>
                     </div>
+                    
                 </div>
+                
             </Draggable>
+            
         </motion.div>
     );
 }
