@@ -45,7 +45,7 @@ const Model = () => {
             <div className='paint-bottom-maximize-sign'></div>
           </div>
           
-          <img alt="bottom half of retro paint window" class="paint-rest-window" src="/paint-window@1x.svg"></img>
+          <img alt="bottom half of retro paint window" className="paint-rest-window" src="/paint-window@1x.svg"></img>
         </div>
 
         <model-viewer alt="3D Model of an Old Retro Computer" id="computer" disable-zoom src="/retro-computer/source/lowres-computer.glb" ar

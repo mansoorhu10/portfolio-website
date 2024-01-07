@@ -232,7 +232,7 @@ nav.navbar .external li a:hover, a:active {
 }
 /*Home Page*/
 .home-page {
-  padding-bottom: 100px;
+  padding-bottom: 20px;
 }
 
 /*Styled Retro Window with all components*/
@@ -582,10 +582,11 @@ h3 {
 
 .first-article-background {
   background-color: var(--secondary);
-  height: calc(100vh - 80px);
+  height: auto;
   padding-top: 100px;
   width: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
+  
 }
 
 .first-article {
@@ -949,10 +950,37 @@ h3 {
   background: var(--third);
 }
 
+/* Skill Grid and Boxes */
+.skill-box {
+  padding: 5px;
+  border-style: inset;
+  border-width: 3px;
+  border-top-color: var(--fourth);
+  border-left-color: var(--fourth);
+  border-bottom-color: var(--third);
+  border-right-color: var(--third);
+  border-radius: 5px;
+  background-color: var(--fifth);
+  color: var(--secondary);
+  width: auto;
+  display: inline-block;
+  margin: .3em;
+  font-size: 20px;
+  font-family: 'IBM Plex Sans Bold', sans-serif;
+}
+
+.skill-grid{ 
+  column-count: auto;
+  column-gap: 1em;
+  row-gap: 1em;
+  width: auto;
+}
+
+
+
 /* Contact Page */
 .contact-page {
-  height: calc(100vh + 50%);
-  
+  height: auto;
 }
 
 .contact-half {
@@ -964,7 +992,7 @@ h3 {
 .contact-container {
   width: 80%;
   margin: auto;
-  padding-top: 75px;
+  padding-top: 2%;
 }
 
 .contact-box {
@@ -975,7 +1003,8 @@ h3 {
 .contact-text {
   color: white;
   flex-basis: 40%;
-  padding: 100px 60px;
+  padding: 140px 60px;
+  margin-top: 20px;
 
 }
 
@@ -1358,6 +1387,9 @@ label {
   border-bottom: 3px solid white;
   height: 100%;
 }
+.source-code .logo-child {
+  border-radius: 5px;
+}
 
 .back-button {
   font-family: 'IBM Plex Sans Bold', 'Fira Sans', sans-serif;
@@ -1463,6 +1495,14 @@ label {
 
   .retro-window .logo-child svg {
     font-size: 40px;
+  }
+
+  .top-left{
+    margin-top: 5px;
+    padding-top: 0px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    margin-bottom: 1px;
   }
 
   .paint-window {

@@ -1,5 +1,7 @@
 import { React } from 'react'
 import Model from './Model';
+import SkillGrid from './SkillGrid';
+import { SkillsList } from '../helpers/SkillsList';
 
 const FirstArticle = () => {
 
@@ -13,22 +15,11 @@ const FirstArticle = () => {
                     </p>
                     
                     <p>
-                        Here is a list of languages, libraries, and frameworks that I have learned and have experience working with to create projects:
-                        <ul>
-                            <li>C</li>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>React</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>SQL</li>
-                            <li>jQuery</li>
-                            <li>Firebase</li>
-                            <li>MongoDB</li>
-                            <li>ExpressJS</li>
-                            <li>NodeJS</li>
-                        </ul>
+                        Here is a list of languages, libraries, frameworks, and tools that I have learned and have experience working with to create projects:
+                    </p>
+                    
+                    <p>
+                        <SkillGrid listOfSkills={SkillsList} />
                     </p>
                 </div>
                 
