@@ -25,62 +25,58 @@ export const SkillsList = [
     },
     {
         key: 6,
-        skill: "HTML",
-    },
-    {
-        key: 7,
         skill: "CSS",
     },
     {
-        key: 8,
+        key: 7,
         skill: "MySQL",
     },
     {
-        key: 9,
+        key: 8,
         skill: "jQuery",
     },
     {
-        key: 10,
+        key: 9,
         skill: "Firebase",
     },
     {
-        key: 11,
+        key: 10,
         skill: "MongoDB",
     },
     {
-        key: 12,
+        key: 11,
         skill: "ExpressJS",
     },
     {
-        key: 13,
+        key: 12,
         skill: "NodeJS",
     },
     {
-        key: 14,
+        key: 13,
         skill: "Spring Boot",
     },
     {
-        key: 15,
+        key: 14,
         skill: "Kotlin",
     },
     {
-        key: 16,
+        key: 15,
         skill: "JUnit",
     },
     {
-        key: 17,
+        key: 16,
         skill: "Puppeteer",
     },
     {
-        key: 18,
+        key: 17,
         skill: "TesseractJS",
     },
     {
-        key: 19,
+        key: 18,
         skill: "Postman",
     },
     {
-        key: 20,
+        key: 19,
         skill: "SQLite",
     },
     
