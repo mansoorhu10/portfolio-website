@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { ReportList } from "../helpers/ReportList"
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
-import { GitHub } from "@mui/icons-material";
 import NotFound from "./NotFound";
 
 const ReportDisplay = () => {
