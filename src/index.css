@@ -1313,6 +1313,7 @@ label {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 }
 
 /* Dynamic Project Pages */
@@ -1415,6 +1416,15 @@ label {
 
 .back-button:hover{
   background-color: var(--secondary);
+}
+
+/* Dynamic Internship/Report Pages */
+.works-cited {
+  text-align: left;
+  font-size: 8px;
+}
+.report-image-caption {
+  color: var(--sixth)
 }
 
 /* 404 - Not Found Page */
