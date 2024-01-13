@@ -75,6 +75,8 @@ const ReportDisplay = () => {
                             <p>{report.descriptionThree}</p>
                         </div>    
 
+                        <br />
+
                         <div className="description-image">
                             <img className="image-one" src={report.imageFour} alt={imageAlt}></img>
                         </div>
@@ -87,9 +89,13 @@ const ReportDisplay = () => {
                             <p>{report.descriptionFive}</p>
                         </div>
 
+                        <br />
+
                         <div className="description-image">
                             <img className="image-one" src={report.imageFive} alt={imageAlt}></img>
                         </div>
+
+                        <br />
 
                         <div className="project-description">
                             <p>{report.descriptionSix}</p>

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Internships = () => {
 
     return (
-        <div className="reports-page">
+        <div className="projects-page">
             <motion.div 
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
@@ -14,7 +14,7 @@ const Internships = () => {
             
             className="projects-list">
                 {ReportList.map((report, index) => {
-                    return <ReportItem id={index} name={report.textName + ".txt"} logo={report.logo} />
+                    return <ReportItem id={index} name={report.textName} logo={report.logo} />
                 })}
             </motion.div>
 
