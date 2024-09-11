@@ -65,11 +65,13 @@ const ReportDisplay = () => {
                             <p>{report.descriptionTwo}</p>
                         </div>
 
-                        <br />
-
-                        <div className="description-image">
-                            <img className="image-one" src={report.imageThree} alt={imageAlt}></img>
-                        </div>
+                        {report.imageThree && <>
+                            <br />
+                            
+                            <div className="description-image">
+                                <img className="image-one" src={report.imageThree} alt={imageAlt}></img>
+                            </div> 
+                        </>}
 
                         <div className="project-description">
                             <p>{report.descriptionThree}</p>

@@ -5,6 +5,9 @@ import CCSImageThree from "../assets/WTR1-image-three.jpeg";
 import CCSImageFour from "../assets/WTR1-image-four.jpeg";
 import CCSImageFive from "../assets/WTR1-image-five.jpeg";
 import ThirdOctetImageOne from "../assets/WTR2-image-one.jpg";
+import ThirdOctetImageTwo from "../assets/WTR2-image-two.png";
+import ThirdOctetImageFour from "../assets/WTR2-image-four.png";
+import ThirdOctetImageFive from "../assets/WTR2-image-six.jpeg";
 
 export const ReportList = [
     {
@@ -39,10 +42,10 @@ export const ReportList = [
         name: "Work Term Report S24",
         logo: ReportLogo,
         imageOne: ThirdOctetImageOne,
-        imageTwo: "",
+        imageTwo: ThirdOctetImageTwo,
         imageThree: "",
-        imageFour: "",
-        imageFive: "",
+        imageFour: ThirdOctetImageFour,
+        imageFive: ThirdOctetImageFive,
         imageCaptionOne: "Third Octet, Head Office",
         descriptionOne: "Welcome to my website. This page is dedicated to my second co-op work term that I completed in Summer 2024. I was a Low Code Developer co-op at Third Octet. I was a part of the R&D division as part of a new initiative to implement more automation at the company, for both the internal team and customers. I worked from home for the entire internship but attended a fiscal year kickoff meeting in Toronto. I hope you take away from this page the unique skills you can learn as a Low Code Developer making automations and how there are transferable skills that can be helpful for a software developer or software engineer that will benefit them in their career.",
         descriptionTwo: "Third Octet Inc. is a managed IT service provider for small to medium-sized businesses. They aid and support employees with IT, allowing them to be their best in remote and hybrid work environments. Third Octet offers a collection of services called Workplace Suite that helps businesses create and manage a modern workplace environment. The Workplace Suite includes helpdesk and user support, endpoint monitoring and lifecycle management, IT infrastructure management and support, server and data backup and recovery, holistic patch management, Microsoft 365 subscription and management, data storage (OneDrive, Teams, Sharepoint), unlimited cloud data backup and recovery, email anti-spam, managed endpoint and server security protection, Microsoft 365 security management and personalized customer portal. The Workplace Suite is customizable and can be tailored to meet a business's size and requirements. The core values of Third Octet include: we do without being asked, we tell you like it is, we see things differently, no high horses here, help our future selves, and forever a student (“About”, 2023). Third Octet has been recognized Globe and Mail Canada’s Top Growing Companies in  2021, 50 Best Managed IT Companies from 2021-2022, Ingram Micro Canadian Cloud Partner of the Year Finalist 2020, CDN Channel Innovation Award Finalist in 2018, Citrix Partner of the Year for Canada in 2017, Top 100 Cloud Services Providers in 2017, IGEL Emerging Partner of the Year for Canada in 2019, IGEL Growth Partner of the Year for North America in 2020, Channel Futures MSP 501 in 2020 and 2023 (“Accolades & Recognition”, 2023).",
