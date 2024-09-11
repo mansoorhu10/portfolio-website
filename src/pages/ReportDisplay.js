@@ -45,7 +45,7 @@ const ReportDisplay = () => {
                             <img className="image-one" src={report.imageOne} alt={imageAlt}></img>
                             
                             <div className="report-image-caption">
-                                Johnston Hall, University of Guelph
+                                {report.imageCaptionOne}
                             </div>
                         </div>    
 
@@ -106,9 +106,8 @@ const ReportDisplay = () => {
                         <div className="works-cited">
                             <p style={{textAlign:"center"}}>Works Cited</p>
                             <p><i>{report.sourceOneTitle}</i> {report.sourceOnePublisher} <i>{report.sourceOneWebTitle}</i> <a href={report.sourceOneUrl}>{report.sourceOneUrl}</a>{report.sourceOneDate}</p>
-                            <p><i>{report.sourceTwoTitle}</i> {report.sourceTwoPublishDate} <i>{report.sourceTwoPublisher}</i> <a href={report.sourceTwoUrl}>{report.sourceTwoUrl}</a>{report.sourceTwoDate}</p>
+                            <p><i>{report.sourceTwoTitle}</i> {report.sourceTwoPublisher} {report.sourceTwoPublishDate} <a href={report.sourceTwoUrl}>{report.sourceTwoUrl}</a>{report.sourceTwoDate}</p>
                         </div>
-
                     </p>
                 </motion.div>
             </div>

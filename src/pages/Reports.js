@@ -12,7 +12,7 @@ const Internships = () => {
                 animate={{opacity: 1}}
                 transition={{duration: 0.5}}
             
-            className="projects-list">
+            className="project-list">
                 {ReportList.map((report, index) => {
                     return <ReportItem id={index} name={report.textName} logo={report.logo} />
                 })}
