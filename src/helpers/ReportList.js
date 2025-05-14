@@ -8,6 +8,10 @@ import ThirdOctetImageOne from "../assets/WTR2-image-one.jpg";
 import ThirdOctetImageTwo from "../assets/WTR2-image-two.png";
 import ThirdOctetImageFour from "../assets/WTR2-image-four.png";
 import ThirdOctetImageFive from "../assets/WTR2-image-six.jpeg";
+import AMTBImageOne from "../assets/WTR3-image-one.jpeg";
+import AMTBImageTwo from "../assets/WTR3-image-two.jpeg";
+import AMTBImageThree from "../assets/WTR3-image-three.jpeg";
+import AMTBImageFour from "../assets/WTR3-image-four.jpeg";
 
 export const ReportList = [
     {
@@ -68,11 +72,10 @@ export const ReportList = [
         textName: "WTR_3",
         name: "Work Term Report W25",
         logo: ReportLogo,
-        imageOne: "null",
-        imageTwo: "null",
-        imageThree: "null",
-        imageFour: "null",
-        imageFive: "null",
+        imageOne: AMTBImageOne,
+        imageTwo: AMTBImageTwo,
+        imageFour: AMTBImageThree,
+        imageFive: AMTBImageFour,
         imageCaptionOne: "ArcelorMittal Tailored Blanks, Concord Office Reception",
         descriptionOne: "Welcome to my website. This page is dedicated to my third co-op work term that I completed in Winter 2025. I was an AI Engineering Intern at ArcelorMittal Tailored Blanks. I was a part of the Advanced Manufacturing, AI & Machine Learning team and worked to aid in implementing new innovative technology to improve specific aspects of operations at the plant. I worked on-site at the Concord office. I hope you take away from this page the unique skills you can learn from working on AI and machine learning projects and how there are transferable skills that can be helpful for a career in software development or software engineering.",
         descriptionTwo: "ArcelorMittal Tailored Blanks is a division of ArcelorMittal, the world’s leading steel and mining company. It specializes in producing laser welded blanks (LWB, also known as a tailored blank), which is a sheet of steel that uses several different grades with different thicknesses and/or coatings. Different grades are laser welded together to create a single steel sheet, which has the best grade in the best place for strength. Each sheet can be hot- or cold-stamped to give the part its shape. These allow for optimal performance and lighter weight for vehicles, which leads to reduced emissions with unbeatable crash protection to improve safety (“ArcelorMittal Tailored Blanks”). At the company, I work at the intersection of manufacturing technology and applied artificial intelligence. Some specific topics I have encountered while working are machine learning, computer vision, data engineering and industrial automation. AMTB North America has 4 manufacturing locations across Canada, the United States and Mexico. The Concord facility has 100,000 square feet of manufacturing space. AMTB is committed to improving health and safety. The total recordable injury frequency (TRIF) improved by 10% in 2023 compared to 2022, reaching a record low (ArcelorMittal, Sustainability Report 2024).",
